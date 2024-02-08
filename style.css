@@ -1,0 +1,6 @@
+#title-holder {
+    display: table;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
