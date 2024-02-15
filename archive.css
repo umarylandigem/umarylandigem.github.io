@@ -1,0 +1,10 @@
+#headline {
+    text-align: center;
+}
+
+#links-holder {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 25%;
+}
