@@ -1,5 +1,5 @@
 body {
-    background-color: #14213D;
+    background-color: white;
 }
 
 #title-holder {
@@ -8,6 +8,11 @@ body {
     margin: auto;
     text-align: center;
     margin-top: 75px;
-    color: #F5F5F5;
 }
 
+#team-picture{
+    display:flex;
+    justify-content:center;
+    margin:auto;
+    width: 500px;
+}
