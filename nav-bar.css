@@ -1,0 +1,26 @@
+body {
+    margin:0;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    color: white;
+    padding: 15px;
+}
+
+nav #brand-logo {
+    float: left;
+}
+
+nav #links {
+    float: right;
+    margin-top: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
