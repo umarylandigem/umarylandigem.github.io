@@ -10,10 +10,9 @@ body {
     margin-top: 75px;
 }
 
-#team-picture{
-    display:flex;
-    justify-content:center;
-    margin:auto;
+#team-picture {
+    display: block;
+    margin: auto;
     width: 500px;
 }
 
@@ -22,5 +21,37 @@ body {
     font-weight: 400;
     font-style: normal;
     color:black;
-    font:900px;
+    font-size:75px;
+    
+}
+
+#headings h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    color:black;
+    font-size:40px;
+    margin-left: 300px; /* Adjust as needed */
+}
+
+#headings h2{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color:black;
+    font-size:25px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.corner-image-container {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    left: -570px; /* Adjust as needed */
+    z-index: 999; /* Ensure it's above other content */
+}
+
+.corner-image {
+    width: 1000px; /* Adjust width as needed */
 }
