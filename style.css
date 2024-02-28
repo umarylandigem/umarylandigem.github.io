@@ -1,26 +1,42 @@
 body {
-    background-color: white;
+  background-color: white;
 }
 
 #title-holder {
-    display: table;
-    position: relative;
-    margin: auto;
-    text-align: center;
-    margin-top: 75px;
+  display: table;
+  position: relative;
+  margin: auto;
+  text-align: center;
 }
 
-#team-picture{
-    display:flex;
-    justify-content:center;
-    margin:auto;
-    width: 500px;
+#team-picture {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 500px;
 }
 
-#title-holder h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color:black;
-    font:900px;
+#title-holder {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+#title-holder p {
+  font-size: 50px;
+}
+
+.text-block {
+  font-family: "Rosario", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+}
+
+.text-block p {
+  font-size: x-large;
 }
