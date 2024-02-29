@@ -40,7 +40,6 @@ main {
 .image-wrapper {
   position: relative;
   width: 350px; /* Set your desired width */
-  height: auto; /* Maintain aspect ratio */
   transform-style: preserve-3d;
   transition: transform 0.5s;
   border-radius: 20px;

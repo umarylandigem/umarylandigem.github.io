@@ -40,3 +40,49 @@ body {
 .text-block p {
   font-size: x-large;
 }
+
+/*Slideshow stuff-----------------------------------------------*/
+.slideshow-container {
+  width: 600px;
+  height: 330px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/*End slideshow stuff-----------------------------*/
