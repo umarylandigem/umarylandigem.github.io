@@ -1,57 +1,88 @@
 body {
-    background-color: white;
+  background-color: white;
 }
 
 #title-holder {
-    display: table;
-    position: relative;
-    margin: auto;
-    text-align: center;
-    margin-top: 75px;
+  display: table;
+  position: relative;
+  margin: auto;
+  text-align: center;
 }
 
 #team-picture {
-    display: block;
-    margin: auto;
-    width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 500px;
 }
 
-#title-holder h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color:black;
-    font-size:75px;
-    
+#title-holder {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
 }
 
-#headings h1{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-    color:black;
-    font-size:40px;
-    margin-left: 300px; /* Adjust as needed */
+#title-holder p {
+  font-size: 50px;
 }
 
-#headings h2{
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    color:black;
-    font-size:25px;
-    margin-left: 300px;
-    margin-right: 300px;
+.text-block {
+  font-family: "Rosario", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
 }
 
-.corner-image-container {
-    position: absolute;
-    top: 50px; /* Adjust as needed */
-    left: -570px; /* Adjust as needed */
-    z-index: 999; /* Ensure it's above other content */
+.text-block p {
+  font-size: x-large;
 }
 
-.corner-image {
-    width: 1000px; /* Adjust width as needed */
+/*Slideshow stuff-----------------------------------------------*/
+.slideshow-container {
+  width: 600px;
+  height: 330px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
 }
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/*End slideshow stuff-----------------------------*/
