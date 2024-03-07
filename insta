@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clickable Image with Instagram Logo</title>
@@ -13,7 +13,6 @@
     .image {
         width: 50%;
         height: auto;
-        
     }
     .overlay {
         position: absolute;
@@ -45,13 +44,11 @@
 <body>
 
 <div class="container">
-        <a href="https://www.instagram.com/umarylandigem/">
-        <img class="image" src="Instagram_icon.png" width = "10" height = "5" alt="Instagram Icon">
-           
-        <div class="overlay">
-        
-            
-        
+    <a href="https://www.instagram.com/umarylandigem/">
+        <img class="image" src="Instagram_icon.png" width="10" height="5" alt="Instagram Icon">
+        <div class="overlay"></div>
+        <img class="instagram-logo" src="path/to/instagram_logo.png" alt="Instagram Logo">
+    </a>
 </div>
 
 </body>
