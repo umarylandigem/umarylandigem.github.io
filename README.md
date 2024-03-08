@@ -2,13 +2,7 @@
 <html>
 <head>
  
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, shrink-to-fit=no">
-	<title>Main Page</title>
-	<link href="about.css" rel="stylesheet" type="text/css" />
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!--Sets the font-->
-	<base href = "index.html" target = "_blank">
-
+    
 
 <div class="container">
   <a href="https://www.instagram.com/umarylandigem/"> 
