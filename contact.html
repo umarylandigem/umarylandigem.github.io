@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-<link rel="stylesheet" type="text/css" href="contact.css" />
-</head>
-    
-<body>
+  <head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="contact.css" rel="stylesheet" type="text/css" />
+    <link href="nav-bar.css" rel="stylesheet" type="text/css" />
+
+    <!--Questrial Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Bebas Nue-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <nav>
-        <div id="brand-logo">
-            <a href="index.html" target="_self">
-                <img src="images/igem-logo.png" alt="Brand Logo" />
-            </a>
-        </div>
-        <div id="links" classes=".questrail-regular">
-            <a href="about.html" target="_self">ABOUT US</a>
-            <a href="projects.html" target="_self">PROJECTS</a>
-            <a href="contact.html" target="_self">CONTACT US</a>
-        </div>
+      <div id="brand-logo">
+        <a href="index.html" target="_self">
+          <img src="images/igem-logo.png" alt="Brand Logo" />
+        </a>
+      </div>
+      <div id="links" class=".questrial-regular">
+        <a href="about.html" target="_self">ABOUT US</a>
+        <a href="projects.html" target="_self">PROJECTS</a>
+        <a href="contact.html">CONTACT US</a>
+      </div>
     </nav>
-    
-<p>
-<h2><b>CONTACT US</h2></b>
-</p>
-    
-<div class="container">
-  <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="First">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Last">
-
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email">
-
-
-    <label for="comment">Comment</label>
-    <textarea id="comment" name="comment" style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-    
-<div id="content">
-<div class="left">
-    <p>FOLLOW US ON INSTAGRAM</p>
-<div class="container">
-  <a href="https://www.instagram.com/umarylandigem/">
-  <img class="image" src="insta.png" width =50px height=50px>
- </div>  
-</div>
-</div>
-
-<div id="content">
-<div class="right">
-<p>EMAIL</p>
-<div class="container">
-  <a href="mailto:umarylandigem@gmail.com"> 
-  <img class="image" src="mail.png" width =55px height=55px>
+    <div id="title-holder">
+      <p>CONTACT US</p>
     </div>
-</div>
-</div>
-
-</body>
-
+          
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="First">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Last">
+      
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email">
+      
+      
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment" style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+          
+      <div id="content">
+        <div class="container">
+          <div class="left">
+            <p>FOLLOW US ON INSTAGRAM!</p>
+            <a href="https://www.instagram.com/umarylandigem/">
+            <img class="image" src="insta.png" width =50px height=50px>
+          </div>
+        
+          <div class="right">
+            <p>EMAIL</p>
+            <a href="mailto:umarylandigem@gmail.com"> 
+            <img class="image" src="mail.png" width =55px height=55px>
+          </div>
+      </div>
+  </body>
 </html>

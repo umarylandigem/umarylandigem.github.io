@@ -1,4 +1,3 @@
-
 h2 {
 	font-family: Verdana;
 	font-size: 2em;
@@ -61,5 +60,23 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: white;
-  padding: 20px;
+  padding: 50px;
+}
+
+#title-holder {
+  display: table;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+#title-holder {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+#title-holder p {
+  font-size: 50px;
 }

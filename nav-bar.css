@@ -16,6 +16,7 @@ nav #brand-logo {
 }
 
 nav #brand-logo img {
+    float: left;
     width: auto;
     height: 40px;
 }
