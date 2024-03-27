@@ -11,11 +11,15 @@ h2 {
 #right {
   float: right;
   text-align: center;
+  border-style: red;
+  width: 200px;
 }
 
 #left {
   float: left;
   text-align: center;
+  border-style: red;
+  width: 200px;
 }
 
 input[type="text"],
@@ -47,21 +51,43 @@ input[type="submit"]:hover {
 #main-container {
   border-radius: 5px;
   background-color: white;
-  padding: 50px;
-}
-
-#title-holder {
-  display: table;
   position: relative;
+  justify-content: center;
   margin: auto;
-  text-align: center;
+  margin-top: 10px;
+  width: 50%;
 }
 
 #title-holder {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
   color: black;
+}
+
+#name #first-name {
+  float: left;
+  width: 45%;
+  justify-content: center;
+  margin: auto;
+}
+
+#name {
+  height: 90px;
+}
+
+#name #last-name {
+  float: right;
+  justify-content: center;
+  margin: auto;
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+#name .barrier {
+  width: 50%;
+  height: auto;
 }
 
 #title-holder p {
@@ -72,16 +98,11 @@ input[type="submit"]:hover {
   position: relative;
   justify-content: center;
   margin: auto;
-  margin-top: 100px;
 }
 
 #links-container {
-  border-radius: 5px;
-  padding: 20px;
-  border-style: solid;
   height: 100px;
-  width: 50%;
-
+  width: 400px;
   justify-content: center;
   margin: auto;
 }
