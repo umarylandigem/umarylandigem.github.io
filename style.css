@@ -9,13 +9,6 @@ body {
   text-align: center;
 }
 
-#team-picture {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 500px;
-}
-
 #title-holder {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -43,11 +36,26 @@ body {
 
 /*Slideshow stuff-----------------------------------------------*/
 .slideshow-container {
-  width: 600px;
-  height: 330px;
-  position: relative;
-  margin: auto;
+  /*width: 600px;
+  height: 330px;*/
   overflow: hidden;
+  height: 300px;
+
+  background-position: 50% 0%;
+  background-size: 100%;
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  position: fixed;
+  margin-top: 0px;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
+  overflow: auto;
+  max-height: calc(100% - 300px);
 }
 
 .mySlides {

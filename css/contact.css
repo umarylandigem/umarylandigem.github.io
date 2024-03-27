@@ -8,29 +8,14 @@ h2 {
 	font-weight: plain;
 }
 
-.right {
-  position: absolute;
-  right: 200px;
-  width: 300px;
-  padding: 50px;
+#right {
+  float: right;
   text-align: center;
-
 }
 
-.left {
-  position: absolute;
-  left: 300px;
-  width: 300px;
-  padding: 50px;
- text-align: center;
-
-}
-
-#content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right:0;
+#left {
+  float: left;
+  text-align: center;
 }
 
 input[type=text], select, textarea {
@@ -57,9 +42,11 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
+
+#main-container {
   border-radius: 5px;
   background-color: white;
+<<<<<<< HEAD:contact.css
   padding: 50px;
 }
 
@@ -79,4 +66,30 @@ input[type=submit]:hover {
 
 #title-holder p {
   font-size: 50px;
+=======
+  padding: 20px;
+  width: 50%;
+
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+
+#links-container {
+  border-radius: 5px;
+  padding: 20px;
+  border-style: solid;
+  height: 100px;
+  width: 50%;
+
+  justify-content: center;
+  margin: auto;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+>>>>>>> 2d69f3711e6853507269b38c674b0b4818e674b0:css/contact.css
 }
