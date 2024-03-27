@@ -1,11 +1,11 @@
 h2 {
-	font-family: Verdana;
-	font-size: 2em;
-	margin: 0;
-	padding: 0.1em;
-	padding-left: 1em;
-	text-align: center;
-	font-weight: plain;
+  font-family: Verdana;
+  font-size: 2em;
+  margin: 0;
+  padding: 0.1em;
+  padding-left: 1em;
+  text-align: center;
+  font-weight: plain;
 }
 
 #right {
@@ -18,19 +18,21 @@ h2 {
   text-align: center;
 }
 
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; 
+  padding: 12px;
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin-top: 6px; /* Top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical 
+  resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -38,15 +40,13 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
-
 
 #main-container {
   border-radius: 5px;
   background-color: white;
-<<<<<<< HEAD:contact.css
   padding: 50px;
 }
 
@@ -66,7 +66,6 @@ input[type=submit]:hover {
 
 #title-holder p {
   font-size: 50px;
-=======
   padding: 20px;
   width: 50%;
 
@@ -75,7 +74,6 @@ input[type=submit]:hover {
   margin: auto;
   margin-top: 100px;
 }
-
 
 #links-container {
   border-radius: 5px;
@@ -91,5 +89,4 @@ input[type=submit]:hover {
 .image {
   height: 50px;
   width: 50px;
->>>>>>> 2d69f3711e6853507269b38c674b0b4818e674b0:css/contact.css
 }
