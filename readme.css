@@ -1,0 +1,11 @@
+#content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+  }
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 50px;
+  }
