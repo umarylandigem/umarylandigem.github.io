@@ -7,16 +7,6 @@ body {
   position: relative;
   margin: auto;
   text-align: center;
-}
-
-#team-picture {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 500px;
-}
-
-#title-holder {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -43,8 +33,9 @@ body {
 
 /*Slideshow stuff-----------------------------------------------*/
 .slideshow-container {
-  width: 600px;
-  height: 330px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 330px;
   position: relative;
   margin: auto;
   overflow: hidden;
