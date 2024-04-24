@@ -1,7 +1,7 @@
 # UMaryland iGEM Public Website
 
 ## Creators
-@brthhule, @patrickstarh7, @mahitaxkamal, @sarahzac734, and @Vpenmets
+@brthhule, @patrickstarh7, @mahitaxkamal, @sarahzac734, @ananyajagdish, and @Vpenmets
 
 ## Contact Us
 <link href="readme.css" rel="stylesheet" type="text/css" />
