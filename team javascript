@@ -1,5 +1,5 @@
 const members = [
-    { name: "Member 1", photo: "member1.jpg" },
+    { name: "Abhi Senthilkumar", photo: "abhiheadshot.png" },
     { name: "Member 2", photo: "member2.jpg" },
     // Add more members here
 ];
