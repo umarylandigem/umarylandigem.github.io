@@ -1,51 +1,28 @@
 h2 {
-	font-family: Verdana;
-	font-size: 2em;
-	margin: 0;
-	padding: 0.1em;
-	padding-left: 1em;
-	text-align: center;
-	font-weight: plain;
-}
-
-.right {
-  position: absolute;
-  right: 200px;
-  width: 300px;
-  padding: 50px;
+  font-family: Verdana;
+  font-size: 2em;
+  margin: 0;
+  padding: 0.1em;
+  padding-left: 1em;
   text-align: center;
-
+  font-weight: plain;
 }
 
-.left {
-  position: absolute;
-  left: 300px;
-  width: 300px;
-  padding: 50px;
- text-align: center;
-
-}
-
-#content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right:0;
-}
-
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; 
+  padding: 12px;
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin-top: 6px; /* Top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical 
+  resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -53,14 +30,33 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
 .container {
   border-radius: 5px;
-  background-color: white;
-  padding: 50px;
+  justify-content: center;
+  margin: auto;
+  width: 1200px;
+}
+
+.content {
+  top: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.right {
+  float: right;
+  margin-right: 300px;
+  width: 300px;
+}
+
+.left {
+  float: left;
+  margin-left: 300px;
+  width: 300px;
 }
 
 #title-holder {
@@ -75,8 +71,11 @@ input[type=submit]:hover {
   font-weight: 400;
   font-style: normal;
   color: black;
+  height: 50px;
+  float: left;
+  margin-left: 50px;
 }
 
 #title-holder p {
-  font-size: 50px;
+  font-size: 40px;
 }

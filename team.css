@@ -1,0 +1,61 @@
+#title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 70px;
+}
+
+.section {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 55px;
+}
+
+.circle {
+  border-radius: 50%;
+  border-style: solid;
+  overflow: hidden;
+  height: 205px;
+  width: 205px;
+  border-width: 5px;
+  border-color: #3a8853;
+
+  justify-content: center;
+  margin: auto;
+}
+
+.advisor-text {
+  font-family: "Rosario", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  width: 900px;
+
+  justify-content: center;
+  margin: auto;
+
+  margin-top: 15px;
+}
+
+#grid1,
+#grid2 {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 50px;
+  justify-content: center;
+  margin: auto;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  background-color: #ff543e;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #ff543e;
+  border-width: 5px;
+}

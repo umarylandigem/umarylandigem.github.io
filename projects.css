@@ -168,7 +168,7 @@ main,
 
 @media (max-width: 800px) {
   .grid1,
-  .grid1 {
+  .grid2 {
     grid-template-columns: 1fr; /* Change to a single column */
     gap: 20px; /* Adjust the gap as needed */
     height: auto;
