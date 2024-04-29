@@ -35,47 +35,51 @@ input[type="submit"]:hover {
 }
 
 .container {
+  margin-top: 150px;
   border-radius: 5px;
   justify-content: center;
   margin: auto;
   width: 1200px;
 }
 
-.content {
-  top: 100px;
-  height: 100px;
-  text-align: center;
-}
-
-.right {
-  float: right;
-  margin-right: 300px;
-  width: 300px;
-}
-
 .left {
+  position: absolute;
   float: left;
   margin-left: 300px;
   width: 300px;
-}
-
-#title-holder {
-  display: table;
-  position: relative;
-  margin: auto;
   text-align: center;
+  height: 150px;
+}
+
+.left img {
+  justify-content: center;
+  margin: auto;
 }
 
 #title-holder {
+  margin-left: calc(((100% - 1200px - 150px) / 2) + 600px);
+  text-align: center;
+
+  width: 150px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
-  height: 50px;
-  float: left;
-  margin-left: 50px;
+  height: 150px;
+}
+
+.right {
+  float: right;
+  margin-left: calc((100% - 1200px - 150px) / 2);
+  width: 300px;
+  text-align: center;
 }
 
 #title-holder p {
   font-size: 40px;
+}
+
+#content {
+  display: inline-flex;
+  width: 100%;
 }
