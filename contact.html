@@ -33,47 +33,54 @@
       </div>
       <div id="links" class=".questrial-regular">
         <a href="projects.html" target="_self">PROJECTS</a>
-        <a href="contact.html">CONTACT US</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="team.html" target="_self">TEAM</a>
       </div>
     </nav>
-    <div id="title-holder">
-      <p>CONTACT US</p>
+
+    <div id="content">
+      <div class="left">
+        <p>FOLLOW US ON INSTAGRAM!</p>
+        <a href="https://www.instagram.com/umarylandigem/" target="_blank">
+          <img
+            class="image"
+            src="images/insta.png"
+            width="50px"
+            height="50px"
+          />
+        </a>
+
+      </div>
+
+      <div id="title-holder">
+        <p>CONTACT US</p>
+      </div>
+
+      <div class="right">
+        <p>EMAIL</p>
+        <a href="mailto:umarylandigem@gmail.com" target="_blank">
+          <img class="image" src="images/mail.png" width="55px" height="55px" />
+        </a>
+      </div>
     </div>
-          
-      <div class="container">
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdax7ltrEHUSCVeqixSkgjwDO_cnZCzyOBGfTZZ4JcXaarCZg/formResponse">
-      
-          <label for="entry.1308735583">First Name</label>
-          <input type="text" id="fname" name="entry.1308735583" placeholder="First">
-      
-          <label for="entry.500588330">Last Name</label>
-          <input type="text" id="lname" name="entry.500588330" placeholder="Last">
-      
-          <label for="entry.881700800">Email</label>
-          <input type="text" id="email" name="entry.881700800">
-      
-      
-          <label for="entry.1959053539">Comment</label>
-          <textarea id="comment" name="entry.1959053539" style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
-          
-      <div id="content">
-        <div class="container">
-          <div class="left">
-            <p>FOLLOW US ON INSTAGRAM!</p>
-            <a href="https://www.instagram.com/umarylandigem/" target="_blank">
-            <img class="image" src="insta.png" width =50px height=50px>
-          </div>
-        
-          <div class="right">
-            <p>EMAIL</p>
-            <a href="mailto:umarylandigem@gmail.com" target="_blank"> 
-            <img class="image" src="mail.png" width =55px height=55px>
-          </div>
-      </div>
+
+    <div class="container">
+      <form action="action_page.php">
+        <br />
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="First" />
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Last" />
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" />
+
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" style="height: 125px"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </body>
 </html>

@@ -1,41 +1,39 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 nav {
-    background-color: #000000;
-    overflow: hidden;
-    color: white;
-    padding: 15px;
-    height: 30px;
+  background-color: #000000;
+  overflow: hidden;
+  color: white;
+  padding: 15px;
+  height: 30px;
 }
 
 nav #brand-logo {
-    float: left;
+  float: left;
 }
 
 nav #brand-logo img {
-    float: left;
-    width: auto;
-    height: 40px;
+  float: left;
+  width: auto;
+  height: 40px;
 }
 
 nav #links {
-    float: right;
-    margin-top: 5px;
-    font-size:medium;
+  float: right;
+  margin-top: 5px;
+  font-size: medium;
 
-    font-family: "Questrial", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
 }
-
-

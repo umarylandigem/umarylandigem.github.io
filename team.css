@@ -1,0 +1,98 @@
+#title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 70px;
+}
+
+.section {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 55px;
+}
+
+.circle {
+  border-radius: 50%;
+  border-style: solid;
+  overflow: hidden;
+  height: 205px;
+  width: 205px;
+  border-width: 5px;
+  border-color: #3a8853;
+
+  justify-content: center;
+  margin: auto;
+}
+
+.advisor-text {
+  font-family: "Rosario", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  width: 900px;
+
+  justify-content: center;
+  margin: auto;
+
+  margin-top: 15px;
+}
+
+#grid1,
+#grid2 {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 50px;
+  justify-content: center;
+  margin: auto;
+}
+
+.container {
+  justify-content: center;
+  margin: auto;
+  border-style: solid;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  background-color: #ff543e;
+  border-style: solid;
+  border-color: #ff543e;
+  border-width: 5px;
+  display: inline-block;
+  z-index: 1;
+}
+
+/* Style for the text that will pop up */
+.hover-text {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); /* Center text */
+  color: white; /* Set text color */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Smooth transition for appearing/disappearing */
+  pointer-events: none; /* Make sure text doesn't interfere with hover */
+  height: 100%;
+  font-size: 15px;
+  z-index: 2;
+  width: 100%;
+
+  font-family: "Bebas Nue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+/* When you hover over the container, show the text */
+.profile:hover .hover-text {
+  opacity: 1; /* Show text on hover */
+}
