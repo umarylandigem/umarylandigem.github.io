@@ -48,12 +48,10 @@
   justify-content: center;
   margin: auto;
 }
-
-.profile {
-  height: 200px;
-  width: 200px;
-  background-color: #ff543e;
-  border: 5px solid #ff543e;
+.container {
+  justify-content: center;
+  margin: auto;
+  border-style: solid;
 }
 
 .centered-profile {
