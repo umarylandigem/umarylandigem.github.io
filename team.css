@@ -48,6 +48,10 @@
   justify-content: center;
   margin: auto;
 }
+.box:first-child{
+  align-self: center;
+}
+
 .container {
   justify-content: center;
   margin: auto;
