@@ -41,31 +41,7 @@
   margin-top: 15px;
 }
 
-#grid1 {
-  display: grid;
-  grid-template-columns: repeat(5, 200px);
-  gap: 50px;
-  justify-content: center;
-  margin: auto;
-}
-.box:first-child{
-  align-self: center;
-}
-
-.container {
-  justify-content: center;
-  margin: auto;
-  border-style: solid;
-}
-
-.centered-profile {
-  height: 200px;
-  width: 200px;
-  background-color: transparent;
-  border: none;
-  flex: 0 0 auto; /* Ensure these items don't grow */
-}
-
+#grid1,
 #grid2 {
   display: grid;
   grid-template-columns: repeat(5, 200px);
