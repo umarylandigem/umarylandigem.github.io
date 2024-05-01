@@ -41,7 +41,29 @@
   margin-top: 15px;
 }
 
-#grid1,
+#grid1 {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 50px;
+  justify-content: center;
+  margin: auto;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  background-color: #ff543e;
+  border: 5px solid #ff543e;
+}
+
+.centered-profile {
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  flex: 0 0 auto; /* Ensure these items don't grow */
+}
+
 #grid2 {
   display: grid;
   grid-template-columns: repeat(5, 200px);
