@@ -52,9 +52,8 @@
 #grid1 .profile:nth-child(11),
 #grid1 .profile:nth-child(12),
 #grid1 .profile:nth-child(13) {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  justify-self: center;
 }
 
 .container {
