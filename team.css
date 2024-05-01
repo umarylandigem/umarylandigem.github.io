@@ -49,12 +49,7 @@
   justify-content: center;
   margin: auto;
 }
-#grid1 .profile:nth-child(11),
-#grid1 .profile:nth-child(12),
-#grid1 .profile:nth-child(13) {
-  position: relative;
-  justify-self: center;
-}
+
 
 .container {
   justify-content: center;
