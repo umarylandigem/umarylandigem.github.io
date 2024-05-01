@@ -67,6 +67,9 @@
   display: inline-block;
   z-index: 1;
 }
+.empty-profile:nth-child(3) {
+  left: calc(50% + 200px + 50px); /* Width of two profiles + gap */
+}
 
 /* Style for the text that will pop up */
 .hover-text {
