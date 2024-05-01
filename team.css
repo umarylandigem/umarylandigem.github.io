@@ -82,7 +82,8 @@
   transition: opacity 0.3s; /* Smooth transition for appearing/disappearing */
   pointer-events: none; /* Make sure text doesn't interfere with hover */
   height: 100%;
-  font-size: 15px;
+  /*Old font size was 15px*/
+  font-size: 10px;
   z-index: 2;
   width: 100%;
 
