@@ -41,7 +41,20 @@
   margin-top: 15px;
 }
 
-#grid1,
+#grid1 {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 50px;
+  justify-content: center;
+  margin: auto;
+}
+.centered-profile {
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  margin: auto;
+}
 #grid2 {
   display: grid;
   grid-template-columns: repeat(5, 200px);
