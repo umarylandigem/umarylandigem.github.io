@@ -48,8 +48,8 @@
     </div>
     <div id="links" class=".questrial-regular">
       <a href="projects.html" target="_self">PROJECTS</a>
-      <a href="team.html" target="_self">TEAM</a>
       <a href="contact.html" target="_self">CONTACT</a>
+      <a href="team.html" target="_self">TEAM</a>
     </div>
   </nav>
 
@@ -64,10 +64,10 @@
     <br /><br />
 
     <div class="advisor-block">
-      <div class="circle">
+      <div class="circle" style="float: left">
         <img src="images/team-images/advisors/dr-einstein.jpg" />
       </div>
-      <div class="advisor-text">
+      <div class="advisor-text" style="float: left">
         Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience and
         Biotechnology Research and an Associate Professor in the Fischell
         Department of Bioengineering at the University of Maryland. Trained in
@@ -75,12 +75,12 @@
         interests are focused on protein and biosystem engineering for
         applications in plants such as biofuels and pathogen resistance. He has
         advised the Umaryland iGEM team since 2014 and is an active leader of
-        the iGEM Engineering and Steering Committees. 
+        the iGEM Engineering and Steering Committees.
       </div>
     </div>
 
     <br /><br />
-    <div class="advisor-block">
+    <div class="advisor-block" style="float: right">
       <div class="circle">
         <img src="images/team-images/advisors/dr-kahn.jpg" />
       </div>
@@ -95,27 +95,40 @@
       </div>
     </div>
 
+    <!--Slideshow-->
+    <div id="slideshow-modal" class="modal">
+      <div class="modal-content">
+        <!--Close button-->
+        <span class="close">&times;</span>
+        <div class="slideshow">
+          <!--Prev button-->
+          <span class="prev-arrow">&#10094;</span>
+          <!--Content-->
+          <div class="slideshow-content"></div>
+          <!--Next button-->
+          <span class="next-arrow">&#10095;</span>
+        </div>
+      </div>
+    </div>
+
     <br /><br />
-    <div class="section">EXEC BOARD</div>
+    <div class="section">BOARD</div>
     <br />
 
     <div id="grid1">
       <div class="profile">
-        <img src="images/team-images/exec/renee-jaranson.jpg" />
-        <div class="hover-text">
-          Renee is a sophomore bioengineering major from Ellicott City,
-          Maryland. After college, she hopes to pursue graduate school and
-          research in cell and gene therapy. This iGEM cycle, Renee is involved
-          with the Design and Modeling committees.
-        </div>
+        <img src="images/team-images/exec/renee-jaranson.jpg" class="image" />
       </div>
 
       <div class="profile">
-        <img src="images/team-images/exec/Mia-Jocic.JPG" alt="" />
+        <img src="images/team-images/exec/Mia-Jocic.JPG" class="image" />
       </div>
 
       <div class="profile">
-        <img src="images/team-images/exec/abhi-senthilkumar.JPG" alt="" />
+        <img
+          src="images/team-images/exec/abhi-senthilkumar.JPG"
+          class="image"
+        />
       </div>
 
       <div class="profile">
@@ -142,18 +155,26 @@
         <img src="images/team-images/members/Gadigi-Aditri.jpg" alt="" />
       </div>
 
-    
       <div class="profile">
-        <img src = "images/team-images/members/IMG_3901.jpg" alt=""/>
+        <img src="images/team-images/members/jonathon-meyer.jpg" alt="" />
       </div>
-      <div class="profile"></div>
-      <div class="profile"></div>
-       <div class="profile">
-        <img src = "images/team-images/members/IMG_3901.jpg" alt=""/>
+
+      <div class="empty" class="profile"></div>
+
+      <div class="profile">
+        <img src="" alt="" />
       </div>
-    
+
+      <div class="profile">
+        <img src="" alt="" />
+      </div>
+
+      <div class="profile">
+        <img src="" alt="" />
+      </div>
+
+      <div class="empty" class="profile"></div>
     </div>
-    
 
     <br /><br />
     <div class="section">MEMBERS</div>
@@ -175,47 +196,7 @@
       </div>
 
       <div class="profile">
-        <img src= alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
-      </div>
-
-      <div class="profile">
-        <img src="" alt="" />
+        <img src="images/team-images/members/IMG_3901.jpg" alt="" />
       </div>
 
       <div class="profile">
@@ -264,5 +245,7 @@
 
       <br />
     </div>
+
+    <script src="team.js"></script>
   </body>
 </html>
