@@ -22,9 +22,15 @@
   width: 205px;
   border-width: 5px;
   border-color: #3a8853;
-
   justify-content: center;
   margin: auto;
+}
+
+.advisor-block {
+  width: 70%;
+  display: inline-block;
+  margin-left: 5%;
+  border-style: solid;
 }
 
 .advisor-text {
@@ -33,7 +39,7 @@
   font-style: normal;
   text-align: center;
   font-size: 20px;
-  width: 900px;
+  width: calc(100% - 220px);
 
   justify-content: center;
   margin: auto;
@@ -50,7 +56,6 @@
   margin: auto;
 }
 
-
 .container {
   justify-content: center;
   margin: auto;
@@ -65,39 +70,105 @@
   border-style: solid;
   border-color: #ff543e;
   border-width: 5px;
-  display: inline-block;
+
   z-index: 1;
-}
-.empty-profile:nth-child(3) {
-  left: calc(50% + 200px + 50px); /* Width of two profiles + gap */
-}
-
-/* Style for the text that will pop up */
-.hover-text {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%); /* Center text */
-  color: white; /* Set text color */
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  padding: 10px; /* Padding around the text */
-  border-radius: 5px; /* Rounded corners */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s; /* Smooth transition for appearing/disappearing */
-  pointer-events: none; /* Make sure text doesn't interfere with hover */
-  height: 100%;
-  /*Old font size was 15px*/
-  font-size: 10px;
-  z-index: 2;
-  width: 100%;
-
-  font-family: "Bebas Nue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
 }
 
 /* When you hover over the container, show the text */
-.profile:hover .hover-text {
-  opacity: 1; /* Show text on hover */
+.profile:hover {
+  cursor: pointer;
+}
+
+.empty {
+  background-color: white;
+  border-style: none;
+}
+
+/* Modal styling */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed; /* Stays in place even on scroll */
+  z-index: 1000; /* Ensures it's on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scrolling */
+  background-color: rgba(0, 0, 0, 0.8); /* Background with some transparency */
+}
+
+/* Modal content styling */
+.modal-content {
+  margin: 10% auto; /* Center the modal */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  max-width: 90%; /* Restrict maximum width */
+}
+
+/* Close button */
+.close {
+  color: #aaa; /* Color of the close button */
+  float: right; /* Align to the right */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.close:hover,
+.close:focus {
+  color: #000; /* Change color on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+.slideshow {
+  text-align: center; /* Center content */
+}
+
+.slideshow img {
+  max-width: 90%; /* Restrict image size */
+  max-height: 500px; /* Restrict image height */
+}
+
+/* Arrow styling */
+.prev-arrow,
+.next-arrow {
+  cursor: pointer; /* Make cursor a pointer */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Correct alignment */
+  font-size: 36px; /* Larger font for visibility */
+  color: white; /* White color to stand out against dark background */
+  padding: 10px; /* Padding around the arrows */
+  z-index: 10; /* Ensure it's above other content */
+  user-select: none; /* Prevent text selection */
+}
+
+/* Positioning the arrows */
+.prev-arrow {
+  left: 10px; /* Left edge with some padding */
+}
+
+.next-arrow {
+  right: 10px; /* Right edge with some padding */
+}
+
+/* Hover effect for arrows */
+.prev-arrow:hover,
+.next-arrow:hover {
+  color: lightgray; /* Change color on hover */
+}
+
+.slideshow-content p {
+  color: white;
+  float: left;
+  margin-left: calc(50% + 100px);
+}
+
+.slideshow-content img {
+  float: right;
+  margin-right: calc(50% + 100px);
+}
+
+.slideshow-content {
+  display: inline-block;
 }
