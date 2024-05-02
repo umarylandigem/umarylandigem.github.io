@@ -10,8 +10,8 @@ const profiles = document.querySelectorAll(".image");
 // Store slideshow images and descriptions (example)
 const slideshowImages = [
   { src: "images/team-images/exec/renee-jaranson.jpg", name: "Renee Jaranson", desc: "Renee description" },
+  { src: "images/team-images/exec/Mia-Jocic.JPG", name: "Mia-Jocic", desc: ""},
   { src: "images/team-images/exec/abhi-senthilkumar.JPG", name: "Abhi Senthilkumar", desc: "Abhi description" },
-  { src: "images/team-images/exec/Mia-Jocic.JPG", name: "Mia-Jocic", desc: ""}
   // Add the rest of the images and descriptions here
 ];
 

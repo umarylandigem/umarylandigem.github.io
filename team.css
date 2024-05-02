@@ -29,8 +29,6 @@
 .advisor-block {
   width: 70%;
   display: inline-block;
-  margin-left: 5%;
-  border-style: solid;
 }
 
 .advisor-text {
@@ -41,6 +39,7 @@
   font-size: 20px;
   width: calc(100% - 220px);
 
+  padding-top: 15px;
   justify-content: center;
   margin: auto;
 
@@ -56,10 +55,13 @@
   margin: auto;
 }
 
+#grid1 {
+  margin-top: 15px;
+}
+
 .container {
   justify-content: center;
   margin: auto;
-  border-style: solid;
 }
 
 .profile {
@@ -67,10 +69,9 @@
   width: 200px;
   position: relative;
   background-color: #ff543e;
-  border-style: solid;
   border-color: #ff543e;
   border-width: 5px;
-
+  border-style: solid;
   z-index: 1;
 }
 
@@ -158,17 +159,7 @@
   color: lightgray; /* Change color on hover */
 }
 
-.slideshow-content p {
-  color: white;
-  float: left;
-  margin-left: calc(50% + 100px);
-}
-
-.slideshow-content img {
-  float: right;
-  margin-right: calc(50% + 100px);
-}
-
 .slideshow-content {
   display: inline-block;
+  color: white;
 }
