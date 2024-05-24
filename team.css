@@ -97,3 +97,20 @@
 .profile:hover .hover-text {
   opacity: 1; /* Show text on hover */
 }
+
+/*Gears and arrows-----------------------------------------------*/
+.left-corner img {
+  position: absolute;
+  width: 400px;
+  top: 60px;
+  left: 0px;
+}
+
+.right-corner img {
+  position: absolute;
+  width: 400px;
+  top: 60px;
+  right: 0px;
+  transform: scaleX(-1);
+}
+/*End gears and arrows-----------------------------------------------*/
