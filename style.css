@@ -33,9 +33,9 @@ body {
 
 /*Slideshow stuff-----------------------------------------------*/
 .slideshow-container {
-  max-width: 600px;
+  max-width: 60%;
   width: 100%;
-  max-height: 330px;
+  max-height: 440px;
   position: relative;
   margin: auto;
   overflow: hidden;
