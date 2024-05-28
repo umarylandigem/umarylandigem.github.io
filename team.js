@@ -12,6 +12,14 @@ const slideshowImages = [
   { src: "images/team-images/exec/renee-jaranson.jpg", name: "Renee Jaranson", desc: "Renee description" },
   { src: "images/team-images/exec/Mia-Jocic.JPG", name: "Mia-Jocic", desc: ""},
   { src: "images/team-images/exec/abhi-senthilkumar.JPG", name: "Abhi Senthilkumar", desc: "Abhi description" },
+  { src: "images/team-images/exec/jonathan-wu.jpg", name: "Jonathan Wu", desc: "Jonathan description" },
+  { src: "images/team-images/exec/valeria-salas-dietz.jpg", name: "Valeria Salas Dietz", desc: "Valeria description" },
+  { src: "images/team-images/members/mahita-kamalahasan.jpg", name: "Mahita Kamalahasan", desc: "Mahita description" },
+  { src: "images/team-images/members/navya-bansal.jpg", name: "Navya Bansal", desc: "Navya description" },
+  { src: "images/team-images/members/Lauren-Applegate.jpg", name: "Lauren Applegate", desc: "Lauren description" },
+  { src: "images/team-images/members/Gadigi-Aditri.jpg", name: "Aditri Gadigi", desc: "Aditri description" },
+  { src: "images/team-images/members/jonathon-meyer.jpg", name: "Jonathon Meyer", desc: "Jonathon description" },
+  { src: "images/team-images/members/IMG_3901.jpg", name: " ", desc: " description" },
   // Add the rest of the images and descriptions here
 ];
 
