@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  overflow-x: hidden;
 }
 
 #title-holder {
@@ -14,7 +15,7 @@ body {
 }
 
 #title-holder p {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .text-block {
@@ -30,6 +31,61 @@ body {
 .text-block p {
   font-size: x-large;
 }
+
+/*Gears and arrows-----------------------------------------------*/
+.green-gear {
+  position: absolute;
+  width: 500px;
+  top: 120px;
+  left: -220px;
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+.red-gear-other-side {
+  position: absolute;
+  width: 400px;
+  top: 250px;
+  right: -200px;
+  transform: rotate(25deg);
+  z-index: 1;
+}
+
+.yellow-gear-other-side {
+  position: absolute;
+  width: 250px;
+  top: 120px;
+  right: -150px;
+}
+
+.green-arrow-other-side {
+  position: absolute;
+  width: 250px;
+  top: 570px;
+  right: 50px;
+}
+
+.green-gear-other-side {
+  position: absolute;
+  width: 500px;
+  top: 1100px;
+  right: -270px;
+  transform: rotate(10deg);
+}
+
+.yellow-arrow{
+  position: absolute;
+  width: 225px;
+  top: 1000px;
+  left: 40px;
+}
+
+.red-gear-corner {
+  position: absolute;
+  width: 270px;
+  bottom: -1050px;
+}
+/*End gears and arrows-----------------------------------------------*/
 
 /*Slideshow stuff-----------------------------------------------*/
 .slideshow-container {
