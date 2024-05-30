@@ -58,14 +58,18 @@ input[type="submit"]:hover {
 
 #title-holder {
   margin-left: calc(((100% - 1200px - 150px) / 2) + 600px);
-  text-align: center;
-
+  margin-top: -30px;
   width: 150px;
+  height: 150px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
-  height: 150px;
+  white-space: nowrap;
+
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  text-align: center; /* Ensure text is centered if it wraps */
 }
 
 .right {
@@ -76,10 +80,27 @@ input[type="submit"]:hover {
 }
 
 #title-holder p {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 #content {
   display: inline-flex;
   width: 100%;
 }
+
+/*Gears and arrows-----------------------------------------------*/
+.left-corner img {
+  position: absolute;
+  width: 225px;
+  top: 60px;
+  left: 0px;
+}
+
+.right-corner img {
+  position: absolute;
+  width: 225px;
+  bottom: 0px;
+  right: 0px;
+  transform: rotate(180deg);
+}
+/*End gears and arrows-----------------------------------------------*/
