@@ -167,16 +167,16 @@
 /*Gears and arrows-----------------------------------------------*/
 .left-corner img {
   position: absolute;
-  width: 400px;
-  top: 60px;
-  left: 0px;
+  width: 45vh;
+  top: 7.26vh;
+  left: 0vh;
 }
 
 .right-corner img {
   position: absolute;
-  width: 400px;
-  top: 60px;
-  right: 0px;
+  width: 45vh;
+  top: 7.26vh;
+  right: 0vh;
   transform: scaleX(-1);
 }
 /*End gears and arrows-----------------------------------------------*/
