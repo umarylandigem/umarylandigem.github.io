@@ -35,55 +35,55 @@ body {
 /*Gears and arrows-----------------------------------------------*/
 .green-gear {
   position: absolute;
-  width: 500px;
-  top: 120px;
-  left: -220px;
+  width: 35vw; /* Use viewport width for scaling */
+  top: 17vh; /* Use viewport height for positioning */
+  left: -14vw; /* Use viewport width for positioning */
   transform: rotate(15deg);
   z-index: 0;
 }
 
 .red-gear-other-side {
   position: absolute;
-  width: 400px;
-  top: 250px;
-  right: -200px;
+  width: 32vw;
+  top: 35vh;
+  right: -15vw;
   transform: rotate(25deg);
   z-index: 1;
 }
 
 .yellow-gear-other-side {
   position: absolute;
-  width: 250px;
-  top: 120px;
-  right: -150px;
+  width: 20vw;
+  top: 15vh;
+  right: -10vw;
 }
 
 .green-arrow-other-side {
   position: absolute;
-  width: 250px;
-  top: 570px;
-  right: 50px;
+  width: 20vw;
+  top: 90vh;
+  right: 0vw;
 }
 
 .green-gear-other-side {
   position: absolute;
-  width: 500px;
-  top: 1100px;
-  right: -270px;
+  width: 30vw;
+  top: 150vh;
+  right: -15vw;
   transform: rotate(10deg);
 }
 
-.yellow-arrow{
+.yellow-arrow {
   position: absolute;
-  width: 225px;
-  top: 1000px;
-  left: 40px;
+  width: 20vw;
+  top: 120vh;
+  left: 0vw;
 }
 
 .red-gear-corner {
   position: absolute;
-  width: 270px;
-  bottom: -1050px;
+  width: 19vw;
+  bottom: -125vh;
 }
 /*End gears and arrows-----------------------------------------------*/
 
