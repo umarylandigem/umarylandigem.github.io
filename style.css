@@ -4,7 +4,9 @@ body {
 }
 
 #title-holder {
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin: auto;
   text-align: center;
@@ -14,8 +16,20 @@ body {
   color: black;
 }
 
+.title-content {
+  display: flex;
+  align-items: center;
+}
+
 #title-holder p {
   font-size: 70px;
+  margin-right: 10px; 
+}
+
+#title-holder .umd-logo {
+  height: 150px; 
+  width: auto; 
+  vertical-align: middle;
 }
 
 .text-block {
@@ -97,12 +111,35 @@ body {
   overflow: hidden;
 }
 
+.maryland-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows clicks to pass through the frame */
+  z-index: 2; /* Ensures it is above the slideshow */
+}
+
+.maryland-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire frame */
+}
+
 .mySlides {
   display: none;
 }
 
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire slide */
+}
+
 img {
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -119,6 +156,7 @@ img {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
+  z-index: 3; /* Ensure navigation buttons are above the frame */
 }
 
 .prev {
