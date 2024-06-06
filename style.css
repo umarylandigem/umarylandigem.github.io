@@ -4,7 +4,9 @@ body {
 }
 
 #title-holder {
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin: auto;
   text-align: center;
@@ -14,9 +16,24 @@ body {
   color: black;
 }
 
+.title-content {
+  display: flex;
+  align-items: center;
+}
+
 #title-holder p {
   font-size: 70px;
+  margin-right: 10px; 
 }
+
+#title-holder .umd-logo {
+  height: 150px; 
+  width: auto; 
+  vertical-align: middle;
+}
+
+
+
 
 .text-block {
   font-family: "Rosario", sans-serif;
