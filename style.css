@@ -26,12 +26,6 @@ body {
   margin-right: 10px; 
 }
 
-#title-holder .umd-logo {
-  height: 150px; 
-  width: auto; 
-  vertical-align: middle;
-}
-
 .text-block {
   font-family: "Rosario", sans-serif;
   font-optical-sizing: auto;
@@ -49,7 +43,7 @@ body {
 /*Gears and arrows-----------------------------------------------*/
 .green-gear {
   position: absolute;
-  width: 35vw; /* Use viewport width for scaling */
+  width: 30vw; /* Use viewport width for scaling */
   top: 17vh; /* Use viewport height for positioning */
   left: -14vw; /* Use viewport width for positioning */
   transform: rotate(15deg);
@@ -58,7 +52,7 @@ body {
 
 .red-gear-other-side {
   position: absolute;
-  width: 32vw;
+  width: 29vw;
   top: 35vh;
   right: -15vw;
   transform: rotate(25deg);
@@ -67,7 +61,7 @@ body {
 
 .yellow-gear-other-side {
   position: absolute;
-  width: 20vw;
+  width: 18vw;
   top: 15vh;
   right: -10vw;
 }
