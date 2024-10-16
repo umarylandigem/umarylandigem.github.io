@@ -1,14 +1,8 @@
-# UMaryland iGEM Public Website
+# React + Vite
 
-## Creators
-@brthhule, @patrickstarh7, @mahitaxkamal, @sarahzac734, @ananyajagdish, and @Vpenmets
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Contact Us
-<link href="readme.css" rel="stylesheet" type="text/css" />
+Currently, two official plugins are available:
 
-<a href="https://www.instagram.com/umarylandigem/" target="_blank">
-  <img class="image" src="images/insta.png" width =80px height=80px>
-</a>
-<a href="mailto:umarylandigem@gmail.com" target="_blank"> 
-  <img class="image" src="images/mail.png" width =90px height=90px>
-</a>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
