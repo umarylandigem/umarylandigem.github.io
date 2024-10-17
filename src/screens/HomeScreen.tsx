@@ -12,9 +12,7 @@ export default function HomeScreen () {
 
     return (
         <body>
-            
             <NavBar/>
-
             <div id="title-holder">
                 <div className="title-content">
                     <p>UMARYLAND IGEM</p>

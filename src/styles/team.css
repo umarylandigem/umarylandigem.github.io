@@ -1,5 +1,5 @@
 #title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue-Regular";
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -7,7 +7,7 @@
 }
 
 .section {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue-Regular";
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -32,7 +32,7 @@
 }
 
 .advisor-text {
-  font-family: "Rosario", sans-serif;
+  font-family: "Rosario-Regular";
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -180,3 +180,15 @@
   transform: scaleX(-1);
 }
 /*End gears and arrows-----------------------------------------------*/
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: local("BebasNeue-Regular"),
+    url(../assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Rosario-Regular";
+  src: local("Rosario-Regular"),
+    url(../assets/fonts/Rosario-Regular.ttf) format("truetype");
+}

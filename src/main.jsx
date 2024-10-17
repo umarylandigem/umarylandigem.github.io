@@ -1,9 +1,12 @@
 import { StrictMode } from "react";
-import {ReactDOM} from "react-dom/client";
+import ReactDOM from "react-dom" 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NoPage from "./screens/EmptyScreen";
+
+import NoPage from "./screens/NoPage";
 import HomeScreen from "./screens/HomeScreen.tsx";
 import ContactScreen from "./screens/ContactScreen.tsx";
+import ProjectsScreen from "./screens/ProjectsScreen.tsx";
+import TeamScreen from "./screens/TeamScreen.tsx";
 
 export default function App() {
   return (
@@ -12,6 +15,8 @@ export default function App() {
         <Route index element={<HomeScreen />} />
         <Route path="/home" element={<HomeScreen/>} />
         <Route path="/contact" element={<ContactScreen/>} />
+        <Route path="/projects" element={<ProjectsScreen/>} />
+        <Route path="/team" element={<TeamScreen/>} />
         <Route path="/*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
