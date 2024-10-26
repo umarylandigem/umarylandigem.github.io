@@ -1,8 +1,140 @@
 import "../styles/team.css"
 import "../styles/nav-bar.css"
 
+import MembersData from "../data/MembersData.tsx";
+import BoardData from "../data/BoardData.tsx";
+
 import React from "react"
 import NavBar from "../components/NavBar"
+
+
+interface Person {
+  name: string;
+  year: string;
+  major: string;
+  committees: string;
+  src: string;
+}
+
+interface BioArgs {
+  person: Person;
+  isBoard: boolean;
+}
+
+
+function Advisors() {
+  return (
+    <div style={{ padding: "20px" }}>
+      <h2
+        style={{ textAlign: "center", fontWeight: "bold", fontSize: "3rem" }}
+      >
+        Advisors
+      </h2>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+      >
+        <img
+          src="https://static.igem.wiki/teams/5104/team/eisenstein-headshot-updated.png"
+          alt="Dr. Edward Eisenstein"
+          className="advisor-image square-image"
+          style={{
+            border: "5px solid #d2421e",
+            marginRight: "20px",
+          }}
+        />
+        <div>
+          <p style={{ fontWeight: "bold", fontSize: "1.4rem" }}>
+            Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience
+            and Biotechnology Research and an Associate Professor in the
+            Fischell Department of Bioengineering at the University of
+            Maryland. Trained in synthetic biology and protein engineering,
+            his current research interests are focused on protein and
+            biosystem engineering for applications in plants such as biofuels
+            and pathogen resistance. He has advised the Umaryland iGEM team
+            since 2014 and is an active leader of the iGEM Engineering and
+            Steering Committees.
+          </p>
+        </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "20px",
+          flexDirection: "row-reverse",
+        }}
+      >
+        <img
+          src="https://static.igem.wiki/teams/5104/team/kahn-jason-chem-web-updated.png"
+          alt="Dr. Jason D. Kahn"
+          className="advisor-image square-image"
+          style={{
+            border: "5px solid #d2421e",
+            marginLeft: "20px",
+          }}
+        />
+        <div>
+          <p style={{ fontWeight: "bold", fontSize: "1.4rem" }}>
+            Dr. Jason D. Kahn is a biophysical chemist who studies
+            protein-nucleic acid interaction and engineering. He is best known
+            for studies of DNA looping, bending, twisting, and cyclization, as
+            well as hybridization thermodynamics for modified bases. He
+            teaches a variety of chemistry, biochemistry, and molecular
+            biology courses, which he credits for initiating his interest in
+            synthetic biology. With Dr. Eisenstein, he has mentored UMaryland
+            iGEM since 2014.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default function TeamScreen() {
+  return (
+    <>
+
+          <Advisors/>
+
+          <h2 className="section-title" style={{ fontSize: "3rem" }}>
+            Board
+          </h2>
+
+          <div className="grid-container">
+            {BoardData.map((person) => <Bio person={person} isBoard = {true}/>)}
+          </div>
+
+          <h2 className="section-title" style={{ fontSize: "3rem" }}>
+            Members
+          </h2>
+          <div className="grid-container">
+            {MembersData.map((person) => <Bio person={person} isBoard={false}/>)}
+          </div>
+    </>
+  );
+}
+
+function Bio({person, isBoard} : BioArgs ) {
+  return (
+    <div className="grid-item-wrapper">
+      <div className={isBoard ? "grid-item board-item" : "grid-item member-item"}>
+        <img
+          src={person.src}
+          alt={person.name}
+          className="square-image"
+        />
+      </div>
+      <p className="name">{person.name}</p>
+      <p className="bioText" title="Year">{person.year}</p>
+      <p className="bioText" title="Major">{person.major}</p>
+      <p className="bioText" title="Committee(s)">{person.committees}</p>
+    </div>
+  )
+}
 
 function Graphics() {
     return (
@@ -23,6 +155,8 @@ function Graphics() {
     )
 }
 
+// Old Advisors
+/*
 function Advisors() {
     return (
         <>
@@ -62,13 +196,15 @@ function Advisors() {
         </>
     )
 }
-
+*/
+//Old TeamScreen
+/*
 export default function TeamScreen() {
     return (
         <body>
             <NavBar/>
             <Graphics/>
-            {/**Advisor images are 205x205px */}
+            {/**Advisor images are 205x205px *}
             <div id="title">OUR TEAM</div>
 
 
@@ -79,7 +215,7 @@ export default function TeamScreen() {
         </body>
     )
 }
-
+*/
 function Slideshow() {
     return (
         <>
