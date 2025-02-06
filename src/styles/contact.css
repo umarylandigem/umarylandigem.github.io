@@ -1,5 +1,16 @@
+@font-face {
+  font-family: "verdana";
+  src: local("verdana"), url(../assets/fonts/verdana.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: local("BebasNeue-Regular"),
+    url(../assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+}
+
 h2 {
-  font-family: Verdana;
+  font-family: verdana;
   font-size: 2em;
   margin: 0;
   padding: 0.1em;
@@ -39,14 +50,14 @@ input[type="submit"]:hover {
   border-radius: 5px;
   justify-content: center;
   margin: auto;
-  width: 1200px;
+  width: 1500px;
+  padding: 20px;
+  height: 500px;
+  padding-bottom: 50px;
 }
 
 .left {
-  position: absolute;
-  float: left;
-  margin-left: 300px;
-  width: 300px;
+  flex: 1;
   text-align: center;
   height: 150px;
 }
@@ -54,47 +65,44 @@ input[type="submit"]:hover {
 .left img {
   justify-content: center;
   margin: auto;
+  height: 50px;
+  width: 50px;
 }
 
-#title-holder {
-  margin-left: calc(((100% - 1200px - 150px) / 2) + 600px);
-  margin-top: -30px;
-  width: 150px;
+.title-holder {
   height: 150px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue-Regular";
   font-weight: 400;
   font-style: normal;
   color: black;
   white-space: nowrap;
 
-  display: flex; /* Enable flexbox */
-  justify-content: center; /* Center horizontally */
   text-align: center; /* Ensure text is centered if it wraps */
 }
 
 .right {
-  float: right;
-  margin-left: calc((100% - 1200px - 150px) / 2);
-  width: 300px;
+  flex: 1;
   text-align: center;
 }
 
-#title-holder p {
-  font-size: 70px;
+.right img {
+  height: 55px;
+  width: 55px;
 }
 
-#content {
-  display: inline-flex;
+.title-holder {
+  flex: 1;
+  font-size: 70px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
   width: 100%;
 }
 
 /*Gears and arrows-----------------------------------------------*/
-.left-corner img {
-  position: absolute;
-  width: 25vh;
-  top: 7.26vh;
-  left: 0vh;
-}
 
 .right-corner img {
   position: absolute;
@@ -104,3 +112,7 @@ input[type="submit"]:hover {
   transform: rotate(180deg);
 }
 /*End gears and arrows-----------------------------------------------*/
+
+.comment {
+  height: 50px;
+}

@@ -1,5 +1,97 @@
+@import url("https://static.igem.wiki/teams/5104/fonts/roboto-v32-latin-700.woff2");
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.board-item {
+  border: 5px solid #127475; /* Green border for board */
+  border-radius: 10px;
+}
+
+.member-item {
+  border: 5px solid #a92b4a; /* Purple border for members */
+  border-radius: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.advisor-image {
+  width: 200px;
+  height: 250px; /* 4:5 aspect ratio */
+}
+
+.square-image {
+  width: 15rem;
+  height: 15rem; /* 1:1 aspect ratio */
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.grid-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.bio {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.name {
+  margin-top: 20;
+  font-size: 20;
+  font-weight: 800;
+  text-align: "center";
+  margin-bottom: 5;
+}
+
+.bioText {
+  margin: 0;
+  font-size: 15;
+  text-align: "center";
+}
+
 #title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue-Regular";
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -7,7 +99,7 @@
 }
 
 .section {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue-Regular";
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -32,7 +124,7 @@
 }
 
 .advisor-text {
-  font-family: "Rosario", sans-serif;
+  font-family: "Rosario-Regular";
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -180,3 +272,15 @@
   transform: scaleX(-1);
 }
 /*End gears and arrows-----------------------------------------------*/
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: local("BebasNeue-Regular"),
+    url(../assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Rosario-Regular";
+  src: local("Rosario-Regular"),
+    url(../assets/fonts/Rosario-Regular.ttf) format("truetype");
+}
