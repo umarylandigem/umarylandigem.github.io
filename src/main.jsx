@@ -8,6 +8,7 @@ import ContactScreen from "./screens/ContactScreen.tsx";
 import ProjectsScreen from "./screens/ProjectsScreen.tsx";
 import TeamScreen from "./screens/TeamScreen.tsx";
 
+
 export default function App() {
   return (
     <BrowserRouter>

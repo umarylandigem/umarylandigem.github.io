@@ -24,6 +24,9 @@ interface BioArgs {
 
 function Advisors() {
   return (
+    <>
+    <NavBar/>
+
     <div style={{ padding: "20px" }}>
       <h2
         style={{ textAlign: "center", fontWeight: "bold", fontSize: "3rem" }}
@@ -91,6 +94,7 @@ function Advisors() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
