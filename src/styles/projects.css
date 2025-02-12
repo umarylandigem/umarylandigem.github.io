@@ -1,19 +1,19 @@
 @font-face {
   font-family: "Questrial-Regular";
   src: local("Questrial-Regular"),
-    url(src\assets\fonts\Questrial-Regular.ttf) format("truetype");
+    url(.\assets\fonts\Questrial-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "BebasNeue-Regular";
   src: local("BebasNeue-Regular"),
-    url(src/assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+    url(./public/assets/fonts/BebasNeue-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Rosario-Regular";
   src: local("Rosario-Regular"),
-    url(src/assets/fonts/Rosario-Regular.ttf) format("truetype");
+    url(./public/assets/fonts/Rosario-Regular.ttf) format("truetype");
 }
 
 main,

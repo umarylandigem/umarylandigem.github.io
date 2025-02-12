@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Questrial-Regular";
   src: local("Questrial-Regular"),
-    url(src/assets/fonts/Questrial-Regular) format("truetype");
+    url(./public/assets/fonts/Questrial-Regular) format("truetype");
 }
 
 body {

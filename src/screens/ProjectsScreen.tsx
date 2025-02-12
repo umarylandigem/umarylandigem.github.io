@@ -30,7 +30,7 @@ function Container({project} : ContainerArgs) {
     <div className="container">
       <div className="front">
         <div className="front-image">
-          <img src={"src/assets/images/project-images/" + project.year + ".png"} />
+          <img src={"./public/assets/images/project-images/" + project.year + ".png"} />
         </div>
         <div className="front-text">{project.year}</div>
       </div>

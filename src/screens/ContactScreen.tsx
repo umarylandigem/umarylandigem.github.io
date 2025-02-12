@@ -14,7 +14,7 @@ function Content() {
                 <a href="https://www.instagram.com/umarylandigem/" target="_blank">
                 <img
                     className="image"
-                    src="src/assets/images/insta.png"
+                    src="./public/assets/images/insta.png"
                     width="50px"
                     height="50px"
                 />
@@ -29,7 +29,7 @@ function Content() {
             <div className="right">
                 <p>EMAIL</p>
                 <a href="mailto:umarylandigem@gmail.com" target="_blank">
-                <img className="image" src="src/assets/images/mail.png" width="55px" height="55px" />
+                <img className="image" src="./public/assets/images/mail.png" width="55px" height="55px" />
                 </a>
             </div>
 
@@ -67,11 +67,11 @@ export default function ContactScreen() {
 
             {/**Graphics */}
             <div className="left-corner">
-                <img src="src/assets/images/igem-multiple-gears-official.png" alt="Multiple gears"/>
+                <img src="./public/assets/images/igem-multiple-gears-official.png" alt="Multiple gears"/>
             </div>
 
             <div className="right-corner">
-                <img src="src/assets/images/igem-multiple-gears-official.png" alt="Multiple gears"/>
+                <img src="./public/assets/images/igem-multiple-gears-official.png" alt="Multiple gears"/>
             </div>
             <br/>
             <Content/>
