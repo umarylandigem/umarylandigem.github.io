@@ -17,6 +17,15 @@ interface ContainerArgs {
 }
 
 function Container({project} : ContainerArgs) {
+  //Empty container for centering other containers
+  if (project.year == 0) {
+    return (
+      <div className="container">
+
+      </div>
+    )
+  }
+
   return (
     <div className="container">
       <div className="front">

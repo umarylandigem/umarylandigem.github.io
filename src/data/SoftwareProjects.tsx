@@ -7,6 +7,12 @@ interface ProjectArgs {
 
 const SoftwareProjects: ProjectArgs[] = [
   {
+    year: 2024,
+    award: "Gold",
+    backText: "Quantifying specific microRNA biomarkers in order to determine a patient's likelihood of developing cervical cancer.",
+    link: "https://2024.igem.wiki/umaryland/"
+  },
+  {
     year: 2022,
     award: "Bronze",
     backText: "Engineering E.coli to filter excess nitrates from the Chesapeake Bay in an accessible bioreactor system.",
@@ -27,7 +33,7 @@ const SoftwareProjects: ProjectArgs[] = [
   {
     year: 2019,
     award: "Bronze",
-    backText: "Engineering E.coli to filter excess nitrates from the Chesapeake Bay in an accessible bioreactor system.",
+    backText: "Using the Power of Crispr Cas9 to Help Stop the Spread of Pathogenic Chytrid Across the Globe.",
     link: "https://2019.igem.org/Team:UMaryland",
   },
   {
@@ -53,6 +59,12 @@ const SoftwareProjects: ProjectArgs[] = [
     award: "Gold",
     backText: "Reducing the use of antibiotics in synthetic biology research and the spread of antibiotic resistance through an mRNA based toxin-antitoxin system.",
     link: "https://2015.igem.org/Team:UMaryland",
+  },
+  { //Empty component so that the box below this is centered
+    year: 0,
+    award: "",
+    backText: "",
+    link: "",
   },
   {
     year: 2014,
