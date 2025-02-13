@@ -1,13 +1,12 @@
 @font-face {
   font-family: "verdana";
-  src: local("verdana"),
-    url(../public/assets/fonts/verdana.ttf) format("truetype");
+  src: local("verdana"), url(../assets/fonts/verdana.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "BebasNeue-Regular";
   src: local("BebasNeue-Regular"),
-    url(../public/assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+    url(../assets/fonts/BebasNeue-Regular.ttf) format("truetype");
 }
 
 h2 {

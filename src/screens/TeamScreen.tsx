@@ -145,14 +145,14 @@ function Graphics() {
         <>
         <div className="left-corner">
             <img
-            src="./public/assets/images/igem-multiple-gears-official.png"
+            src="./assets/images/igem-multiple-gears-official.png"
             alt="Multiple gears"
             />
         </div>
 
         <div className="right-corner">
             <img
-            src="./public/assets/images/igem-multiple-gears-official.png"
+            src="./assets/images/igem-multiple-gears-official.png"
             alt="Multiple gears"
             />
         </div></>
@@ -168,7 +168,7 @@ function Advisors() {
 
         <div className="advisor-block" style={{marginLeft: "15%"}}>
         <div className="circle" style={{float: "left"}}>
-            <img src="./public/assets/images/team-images/advisors/dr-einstein.jpg" />
+            <img src="./assets/images/team-images/advisors/dr-einstein.jpg" />
         </div>
         <div className="advisor-text" style={{float: "left"}}>
             Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience and
@@ -185,7 +185,7 @@ function Advisors() {
         <br /><br />
         <div className="advisor-block" style={{float: "right",  marginRight: "15%"}}>
         <div className="circle" style={{float: "right"}}>
-            <img src="./public/assets/images/team-images/advisors/dr-kahn.jpg" />
+            <img src="./assets/images/team-images/advisors/dr-kahn.jpg" />
         </div>
         <div className="advisor-text" style={{float: "right"}}>
             Dr. Jason D. Kahn is a biophysical chemist who studies protein-nucleic
@@ -240,67 +240,67 @@ function Slideshow() {
     <div id="grid1">
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/exec/renee-jaranson.jpg"
+          src="./assets/images/team-images/exec/renee-jaranson.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
-        <img src="./public/assets/images/team-images/exec/Mia-Jocic.JPG" className="image" />
+        <img src="./assets/images/team-images/exec/Mia-Jocic.JPG" className="image" />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/exec/abhi-senthilkumar.JPG"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./public/assets/images/team-images/exec/jonathan-wu.jpg"
+          src="./assets/images/team-images/exec/abhi-senthilkumar.JPG"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/exec/valeria-salas-dietz.jpg"
+          src="./assets/images/team-images/exec/jonathan-wu.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/mahita-kamalahasan.jpg"
+          src="./assets/images/team-images/exec/valeria-salas-dietz.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/navya-bansal.jpg"
+          src="./assets/images/team-images/members/mahita-kamalahasan.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Lauren-Applegate.jpg"
+          src="./assets/images/team-images/members/navya-bansal.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Gadigi-Aditri.jpg"
+          src="./assets/images/team-images/members/Lauren-Applegate.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/jonathon-meyer.jpg"
+          src="./assets/images/team-images/members/Gadigi-Aditri.jpg"
+          className="image"
+        />
+      </div>
+
+      <div className="profile">
+        <img
+          src="./assets/images/team-images/members/jonathon-meyer.jpg"
           className="image"
         />
       </div>
@@ -309,14 +309,14 @@ function Slideshow() {
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/IMG_3901.jpg"
+          src="./assets/images/team-images/members/IMG_3901.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Sami_Kudagunti_Headshot.jpg"
+          src="./assets/images/team-images/members/Sami_Kudagunti_Headshot.jpg"
           className="image"
         />
       </div>
@@ -335,92 +335,92 @@ function Slideshow() {
     <div id="grid2">
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Krista-Adu-Osei.jpg"
+          src="./assets/images/team-images/members/Krista-Adu-Osei.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/brennen.jpg"
+          src="./assets/images/team-images/members/brennen.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/patrick.jpg"
+          src="./assets/images/team-images/members/patrick.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Vikram Khandelwal Headshot.jpg"
+          src="./assets/images/team-images/members/Vikram Khandelwal Headshot.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Viharika.jpg"
+          src="./assets/images/team-images/members/Viharika.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
-        <img src="./public/assets/images/team-images/members/Ananya.jpg" className="image" />
+        <img src="./assets/images/team-images/members/Ananya.jpg" className="image" />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Patricia Rosemond Headshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./public/assets/images/team-images/members/Dana_Harel_Headshot.jpg"
+          src="./assets/images/team-images/members/Patricia Rosemond Headshot.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Haider Hussain headshot.jpg"
+          src="./assets/images/team-images/members/Dana_Harel_Headshot.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Rebecca Lu Headshot.jpg"
+          src="./assets/images/team-images/members/Haider Hussain headshot.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Kevin Zhang headshot.jpg"
+          src="./assets/images/team-images/members/Rebecca Lu Headshot.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/Graham Ferguson Headshot.jpg"
+          src="./assets/images/team-images/members/Kevin Zhang headshot.jpg"
           className="image"
         />
       </div>
 
       <div className="profile">
-        <img src="./public/assets/images/team-images/members/sarahz.jpg" className="image" />
+        <img
+          src="./assets/images/team-images/members/Graham Ferguson Headshot.jpg"
+          className="image"
+        />
+      </div>
+
+      <div className="profile">
+        <img src="./assets/images/team-images/members/sarahz.jpg" className="image" />
       </div>
 
       <div className="profile">
         <img
-          src="./public/assets/images/team-images/members/keithheadshot.jpg"
+          src="./assets/images/team-images/members/keithheadshot.jpg"
           className="image"
         />
       </div>

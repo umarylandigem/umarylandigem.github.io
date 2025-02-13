@@ -6,7 +6,7 @@ function NavBar() {
         <nav>
             <div id="brand-logo">
                 <Link to="/home">
-                    <img src="./public/assets/images/igem-logo.png" alt="Brand Logo" />
+                    <img src="./assets/images/igem-logo.png" alt="Brand Logo" />
                 </Link>
             </div>
             <div className="links">

@@ -276,11 +276,11 @@ body {
 @font-face {
   font-family: "BebasNeue-Regular";
   src: local("BebasNeue-Regular"),
-    url(../public/assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+    url(../assets/fonts/BebasNeue-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Rosario-Regular";
   src: local("Rosario-Regular"),
-    url(../public/assets/fonts/Rosario-Regular.ttf) format("truetype");
+    url(../assets/fonts/Rosario-Regular.ttf) format("truetype");
 }
