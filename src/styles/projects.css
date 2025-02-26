@@ -96,7 +96,13 @@ main,
   border-radius: 30px;
   height: 350px;
   width: 350px;
-  overflow: hidden;
+}
+
+.outside-container {
+  position: relative;
+  border-radius: 30px;
+  height: 400px;
+  width: 400px;
 }
 
 .front {

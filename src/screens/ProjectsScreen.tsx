@@ -27,21 +27,23 @@ function Container({project} : ContainerArgs) {
   }
 
   return (
-    <div className="container">
-      <div className="front">
-        <div className="front-image">
-          <img src={"./assets/images/project-images/" + project.year + ".png"} />
+    <div className="outer-container">
+      <div className="container">
+        <div className="front">
+          <div className="front-image">
+            <img src={"./assets/images/project-images/" + project.year + ".png"} />
+          </div>
+          <div className="front-text">{project.year}</div>
         </div>
-        <div className="front-text">{project.year}</div>
-      </div>
 
-      <div className="back">
-        <p className="award">{project.award}</p>
-        <p className="text">
-          {project.backText}
-        </p>
+        <div className="back">
+          <p className="award">{project.award}</p>
+          <p className="text">
+            {project.backText}
+          </p>
 
-        <a href={project.link} target="_blank"><p>Visit Site</p></a>
+          <a href={project.link} target="_blank"><p>Visit Site</p></a>
+        </div>
       </div>
     </div>
   )
@@ -59,7 +61,7 @@ function RenderSoftwareProjects() {
 
 function RenderHardwareProjects() {
   return (
-    <div className="hardware">
+    <div className="grid2 hardware">
       {HardwareProjects.map((project: ProjectArgs) => <Container project={project}/>)}
     </div>
   )
