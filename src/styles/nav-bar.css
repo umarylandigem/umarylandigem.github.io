@@ -4,9 +4,14 @@
     url(./assets/fonts/Questrial-Regular) format("truetype");
 }
 
+@font-face {
+  font-family: "PlusJakartaSans-VariableFont_wght";
+  src: local("PlusJakartaSans-VariableFont_wght"),
+    url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 nav {
@@ -15,26 +20,47 @@ nav {
   color: white;
   padding: 15px;
   height: 30px;
+  font-family: "PlusJakartaSans-VariableFont_wght";
+  display: flex;
+  box-shadow: 10px 5px 5px black;
+}
+
+nav #name {
+  font-family: "PlusJakartaSans-VariableFont_wght";
+  flex: 3;
+}
+
+#left-side {
+  flex: 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  font-size: xx-large;
 }
 
 nav #brand-logo {
-  float: left;
+  flex: 5;
+  display: flex;
+  justify-content: flex-start;
 }
 
 nav #brand-logo img {
-  float: left;
   width: auto;
   height: 40px;
 }
 
 .links {
-  float: right;
-  margin-top: 5px;
+  display: flex;
+  flex: 10;
   font-size: medium;
 
-  font-family: "Questrial-Regular";
+  font-family: "PlusJakartaSans-VariableFont_wght";
   font-weight: 400;
   font-style: normal;
+
+  justify-content: flex-end;
 }
 
 nav a {
@@ -46,4 +72,21 @@ nav a {
 
 nav a:hover {
   color: #b80000;
+}
+
+@media only screen and (max-width: 400px) {
+  #left-side {
+    flex: 50;
+    background-color: #b80000;
+  }
+
+  #brand-logo {
+    flex: 1;
+    background-color: aqua;
+  }
+
+  #name {
+    background-color: bisque;
+    flex: 10;
+  }
 }

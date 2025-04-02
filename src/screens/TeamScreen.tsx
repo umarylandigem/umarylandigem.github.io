@@ -28,9 +28,11 @@ function Advisors() {
     <NavBar/>
 
     <div style={{ padding: "20px" }}>
-      <h2
-        style={{ textAlign: "center", fontWeight: "bold", fontSize: "3rem" }}
-      >
+      <h2 style={{ textAlign: "center", fontWeight: 400, fontSize: "6rem", fontFamily: "BebasNeue-Regular" }}>
+        OUR TEAM
+      </h2>
+    
+      <h2 style={{ textAlign: "center", fontSize: "3rem", fontWeight: 400, fontFamily: "BebasNeue-Regular" }}>
         Advisors
       </h2>
       <div
@@ -45,12 +47,13 @@ function Advisors() {
           alt="Dr. Edward Eisenstein"
           className="advisor-image square-image"
           style={{
-            border: "5px solid #d2421e",
+            border: "5px solid #3A8853",
+            borderRadius: 200,
             marginRight: "20px",
           }}
         />
         <div>
-          <p style={{ fontWeight: "bold", fontSize: "1.4rem" }}>
+          <p style={{ fontSize: "1.4rem", fontFamily: "Rosario-Regular" }}>
             Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience
             and Biotechnology Research and an Associate Professor in the
             Fischell Department of Bioengineering at the University of
@@ -76,12 +79,13 @@ function Advisors() {
           alt="Dr. Jason D. Kahn"
           className="advisor-image square-image"
           style={{
-            border: "5px solid #d2421e",
+            border: "5px solid #3A8853",
             marginLeft: "20px",
+            borderRadius: 200
           }}
         />
         <div>
-          <p style={{ fontWeight: "bold", fontSize: "1.4rem" }}>
+          <p style={{ fontSize: "1.4rem", fontFamily: "Rosario-Regular" }}>
             Dr. Jason D. Kahn is a biophysical chemist who studies
             protein-nucleic acid interaction and engineering. He is best known
             for studies of DNA looping, bending, twisting, and cyclization, as

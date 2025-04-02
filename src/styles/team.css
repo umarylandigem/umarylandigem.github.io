@@ -1,4 +1,22 @@
 @import url("https://static.igem.wiki/teams/5104/fonts/roboto-v32-latin-700.woff2");
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: local("BebasNeue-Regular"),
+    url(./assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Rosario-Regular";
+  src: local("Rosario-Regular"),
+    url(./assets/fonts/Rosario-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans";
+  src: local("");
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -272,15 +290,3 @@ body {
   transform: scaleX(-1);
 }
 /*End gears and arrows-----------------------------------------------*/
-
-@font-face {
-  font-family: "BebasNeue-Regular";
-  src: local("BebasNeue-Regular"),
-    url(./assets/fonts/BebasNeue-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Rosario-Regular";
-  src: local("Rosario-Regular"),
-    url(./assets/fonts/Rosario-Regular.ttf) format("truetype");
-}
