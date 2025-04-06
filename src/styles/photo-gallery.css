@@ -1,0 +1,37 @@
+.gallery {
+  display: flex;
+  flex-direction: column; /* Stack row + dots vertically */
+  align-items: center;
+}
+
+.slideshow-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* spacing between arrow, image, arrow */
+}
+
+.arrow {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.color-box {
+  width: 45rem;
+  height: 30rem;
+  background-color: #254528;
+  object-fit: cover;
+  user-select: none;
+}
+
+.dots-row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
