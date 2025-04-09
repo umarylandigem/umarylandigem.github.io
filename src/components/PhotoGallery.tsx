@@ -28,7 +28,7 @@ function PhotoGallery() {
             setIndex(index - 1 < 0 ? slideshow.length - 1 : index - 1)
           }
         />
-        <img className="color-box" src={slideshow[index]} />
+        <img className="color-box" src={slideshow[index]}/>
         <IoIosArrowDropright
           className="arrow"
           onClick={() =>

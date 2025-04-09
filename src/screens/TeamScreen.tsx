@@ -25,73 +25,77 @@ function Advisors() {
     <>
       <NavBar />
 
-      <div style={{ padding: "20px" }}>
-        <h2
-          style={{ textAlign: "center", fontWeight: "bold", fontSize: "3rem" }}
-        >
-          Advisors
-        </h2>
-        <div
+    <div style={{ padding: "20px" }}>
+      <h2 style={{ textAlign: "center", fontWeight: 400, fontSize: "6rem", fontFamily: "BebasNeue-Regular" }}>
+        OUR TEAM
+      </h2>
+    
+      <h2 style={{ textAlign: "center", fontSize: "3rem", fontWeight: 400, fontFamily: "BebasNeue-Regular" }}>
+        Advisors
+      </h2>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+      >
+        <img
+          src="https://static.igem.wiki/teams/5104/team/eisenstein-headshot-updated.png"
+          alt="Dr. Edward Eisenstein"
+          className="advisor-image square-image"
           style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "20px",
+            border: "5px solid #3A8853",
+            borderRadius: 200,
+            marginRight: "20px",
           }}
-        >
-          <img
-            src="https://static.igem.wiki/teams/5104/team/eisenstein-headshot-updated.png"
-            alt="Dr. Edward Eisenstein"
-            className="advisor-image square-image"
-            style={{
-              border: "5px solid #d2421e",
-              marginRight: "20px",
-            }}
-          />
-          <div>
-            <p style={{ fontWeight: "bold", fontSize: "1.4rem" }}>
-              Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience
-              and Biotechnology Research and an Associate Professor in the
-              Fischell Department of Bioengineering at the University of
-              Maryland. Trained in synthetic biology and protein engineering,
-              his current research interests are focused on protein and
-              biosystem engineering for applications in plants such as biofuels
-              and pathogen resistance. He has advised the Umaryland iGEM team
-              since 2014 and is an active leader of the iGEM Engineering and
-              Steering Committees.
-            </p>
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "20px",
-            flexDirection: "row-reverse",
-          }}
-        >
-          <img
-            src="https://static.igem.wiki/teams/5104/team/kahn-jason-chem-web-updated.png"
-            alt="Dr. Jason D. Kahn"
-            className="advisor-image square-image"
-            style={{
-              border: "5px solid #d2421e",
-              marginLeft: "20px",
-            }}
-          />
-          <div>
-            <p style={{ fontWeight: "bold", fontSize: "1.4rem" }}>
-              Dr. Jason D. Kahn is a biophysical chemist who studies
-              protein-nucleic acid interaction and engineering. He is best known
-              for studies of DNA looping, bending, twisting, and cyclization, as
-              well as hybridization thermodynamics for modified bases. He
-              teaches a variety of chemistry, biochemistry, and molecular
-              biology courses, which he credits for initiating his interest in
-              synthetic biology. With Dr. Eisenstein, he has mentored UMaryland
-              iGEM since 2014.
-            </p>
-          </div>
+        />
+        <div>
+          <p style={{ fontSize: "1.4rem", fontFamily: "Rosario-Regular" }}>
+            Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience
+            and Biotechnology Research and an Associate Professor in the
+            Fischell Department of Bioengineering at the University of
+            Maryland. Trained in synthetic biology and protein engineering,
+            his current research interests are focused on protein and
+            biosystem engineering for applications in plants such as biofuels
+            and pathogen resistance. He has advised the Umaryland iGEM team
+            since 2014 and is an active leader of the iGEM Engineering and
+            Steering Committees.
+          </p>
         </div>
       </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "20px",
+          flexDirection: "row-reverse",
+        }}
+      >
+        <img
+          src="https://static.igem.wiki/teams/5104/team/kahn-jason-chem-web-updated.png"
+          alt="Dr. Jason D. Kahn"
+          className="advisor-image square-image"
+          style={{
+            border: "5px solid #3A8853",
+            marginLeft: "20px",
+            borderRadius: 200
+          }}
+        />
+        <div>
+          <p style={{ fontSize: "1.4rem", fontFamily: "Rosario-Regular" }}>
+            Dr. Jason D. Kahn is a biophysical chemist who studies
+            protein-nucleic acid interaction and engineering. He is best known
+            for studies of DNA looping, bending, twisting, and cyclization, as
+            well as hybridization thermodynamics for modified bases. He
+            teaches a variety of chemistry, biochemistry, and molecular
+            biology courses, which he credits for initiating his interest in
+            synthetic biology. With Dr. Eisenstein, he has mentored UMaryland
+            iGEM since 2014.
+          </p>
+        </div>
+      </div>
+    </div>
     </>
   );
 }
