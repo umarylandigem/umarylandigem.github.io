@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
 
-import "../styles/footer.css";
 import { FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa';
 
 function Footer(){
@@ -21,9 +20,9 @@ function Footer(){
                     <ul>
                         <li><Link to="/">↳ About Us</Link></li>
                         <li><Link to="/">↳ Membership</Link></li>
-                        <li><Link to="/">↳ Team</Link></li>
-                        <li><Link to="/">↳ Projects</Link></li>
-                        <li><Link to="/">↳ Contact Us</Link></li>
+                        <li><Link to="/team">↳ Team</Link></li>
+                        <li><Link to="/projects">↳ Projects</Link></li>
+                        <li><Link to="/contact">↳ Contact Us</Link></li>
                     </ul>
                 </div>
 

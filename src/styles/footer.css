@@ -5,30 +5,30 @@
 }
 
 body {
-    background-image: url("./assets/images/background.png");
-    padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 #foot-content {
+    padding: 0;
+    margin: 3rem;
+    background-image: url("./assets/images/background.png");
     position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    /* gap: 2rem; */
 }
 
-/* #brand-logo {
-    float: left;
-}
-   */
 #brand-logo {
     float: left;
     width: auto;
     height: 20px;
+}
+
+h4, p {
+    padding: 0;
+    margin: 5px;
 }
 
 #quick-links ul {
@@ -37,8 +37,14 @@ body {
     list-style: none;
 }
 
-#quick-links ul li {
-    text-decoration: none;
+#quick-links ul li a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+#contact p {
+    font-weight: 100;
 }
 
 .social-icons {

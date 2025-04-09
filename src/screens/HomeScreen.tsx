@@ -1,5 +1,6 @@
 import "../styles/home.css";
 import "../styles/nav-bar.css";
+import "../styles/footer.css";
 
 import React from "react";
 import { useState, useEffect } from "react";
