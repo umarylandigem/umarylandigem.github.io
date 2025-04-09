@@ -12,9 +12,13 @@ body {
 #foot-content {
     background-image: url("./assets/images/background.png");
     background-size: 100%;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
-    
+}
+
+#word-content {
+    padding-top: 3rem;
+
     position: relative;
     z-index: 1;
     display: flex;

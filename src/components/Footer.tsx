@@ -7,6 +7,7 @@ function Footer(){
     return (
         <>
             <div id="foot-content">
+                <div id="word-content">
                 <div id="brand-logo">
                     <Link to="/home">
                         <img id="logo" src="./assets/images/igem-transparent-logo.png" alt="Brand Logo" />
@@ -42,7 +43,7 @@ function Footer(){
                         <img id="terplink" src="./assets/images/terplink-logo.png" alt="terplink Logo" />
                     </div>
                 </div>
-                
+                </div>
             </div>
         </>
     )
