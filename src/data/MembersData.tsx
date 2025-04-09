@@ -14,13 +14,6 @@ const MembersData = [
     src: "https://static.igem.wiki/teams/5104/team/ananya-headshot-updated.png",
   },
   {
-    name: "Brennen Le",
-    year: "Sophomore",
-    major: "Computer Science",
-    committees: "Design",
-    src: "https://static.igem.wiki/teams/5104/team/brennen-le-photo-updated.png",
-  },
-  {
     name: "Haider Hussain",
     year: "Junior",
     major: "Bioengineering",
