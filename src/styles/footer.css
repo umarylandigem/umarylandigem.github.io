@@ -10,9 +10,11 @@ body {
 }
 
 #foot-content {
-    padding: 0;
-    margin: 3rem;
     background-image: url("./assets/images/background.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     position: relative;
     z-index: 1;
     display: flex;
@@ -20,10 +22,18 @@ body {
     justify-content: space-evenly;
 }
 
+
+
 #brand-logo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
     float: left;
-    width: auto;
-    height: 20px;
+}
+
+#brand-logo p {
+    font-weight: 100;
 }
 
 h4, p {
@@ -47,9 +57,20 @@ h4, p {
     font-weight: 100;
 }
 
+#connect {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+}
+
 .social-icons {
     display: flex;
     gap: 1rem;
-    font-size: 1.8rem;
+    font-size: 3rem;
+}
+
+#terplink {
+    width: 3rem;
 }
 

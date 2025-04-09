@@ -9,10 +9,10 @@ function Footer(){
             <div id="foot-content">
                 <div id="brand-logo">
                     <Link to="/home">
-                        <img src="./assets/images/igem-transparent-logo.png" alt="Brand Logo" />
+                        <img id="logo" src="./assets/images/igem-transparent-logo.png" alt="Brand Logo" />
                     </Link>
 
-                    <p className="copyright">© UMaryland iGEM 2025</p>
+                    <p>© UMaryland iGEM 2025</p>
                 </div>
 
                 <div id="quick-links">
@@ -39,6 +39,7 @@ function Footer(){
                         <FaInstagram />
                         <FaLinkedin />
                         <FaDiscord />
+                        <img id="terplink" src="./assets/images/terplink-logo.png" alt="terplink Logo" />
                     </div>
                 </div>
                 
