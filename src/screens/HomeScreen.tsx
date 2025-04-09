@@ -7,6 +7,7 @@ import NavBar from "../components/NavBar";
 import Slideshow from "../components/Slideshow";
 import Gears from "../components/Gears";
 import PhotoGallery from "../components/PhotoGallery";
+import Footer from "../components/Footer";
 
 export default function HomeScreen() {
   setTimeout(Slideshow, 3000);
@@ -91,6 +92,8 @@ export default function HomeScreen() {
         </h1>
       </div>
       <PhotoGallery></PhotoGallery>
+
+      <Footer/>
     </body>
   );
 }

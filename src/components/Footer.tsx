@@ -1,27 +1,51 @@
 import React from "react"
 import { Link } from "react-router-dom";
 
+import "../styles/footer.css";
+import { FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa';
+
 function Footer(){
     return (
         <>
-            <div id="brand-logo">
-                <Link to="/home">
-                    <img src="./assets/images/igem-logo.png" alt="Brand Logo" />
-                </Link>
-            </div>
+            <div id="foot-content">
+                <div id="brand-logo">
+                    <Link to="/home">
+                        <img src="./assets/images/igem-transparent-logo.png" alt="Brand Logo" />
+                    </Link>
 
-            <div id="quickLinks">
+                    <p className="copyright">© UMaryland iGEM 2025</p>
+                </div>
 
-                <Link to="/">About Us</Link>
-                <Link to="/">Membership</Link>
-                <Link to="/">Team</Link>
-                <Link to="/">Projects</Link>
-                <Link to="/">Contact Us</Link>
-            </div>
+                <div id="quick-links">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><Link to="/">↳ About Us</Link></li>
+                        <li><Link to="/">↳ Membership</Link></li>
+                        <li><Link to="/">↳ Team</Link></li>
+                        <li><Link to="/">↳ Projects</Link></li>
+                        <li><Link to="/">↳ Contact Us</Link></li>
+                    </ul>
+                </div>
 
-            <div id="contact">
+                <div id="contact">
+                    <h4>CONTACT US AT</h4>
+                    <p>↳ umarylandigem@gmail.com</p>
+                    <h4>MAILING ADDRESS</h4>
+                    <p>↳ something, umd</p>
+                </div>
 
+                <div id="connect">
+                    <h4>CONNECT WITH US</h4>
+                    <div className="social-icons">
+                        <FaInstagram />
+                        <FaLinkedin />
+                        <FaDiscord />
+                    </div>
+                </div>
+                
             </div>
         </>
     )
 }
+
+export default Footer;

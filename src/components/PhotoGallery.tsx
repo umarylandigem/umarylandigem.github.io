@@ -6,7 +6,7 @@ import React from "react";
 import { useState } from "react";
 
 function PhotoGallery() {
-  const slideshow = [
+  const slideshow = [-
     "../assets/images/index-slideshow/heya-in-lab.jpg",
     "../assets/images/index-slideshow/main-page-picture.jpg",
     "../assets/images/index-slideshow/midatlantic-meetup.jpeg",

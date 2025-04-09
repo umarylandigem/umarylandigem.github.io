@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Questrial-Regular";
+    src: local("Questrial-Regular"),
+      url(./assets/fonts/Questrial-Regular) format("truetype");
+}
+
+body {
+    background-image: url("./assets/images/background.png");
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#foot-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    /* gap: 2rem; */
+}
+
+/* #brand-logo {
+    float: left;
+}
+   */
+#brand-logo {
+    float: left;
+    width: auto;
+    height: 20px;
+}
+
+#quick-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#quick-links ul li {
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
