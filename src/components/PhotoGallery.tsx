@@ -6,7 +6,7 @@ import React from "react";
 import { useState } from "react";
 
 function PhotoGallery() {
-  const slideshow = [-
+  const slideshow = [
     "../assets/images/index-slideshow/heya-in-lab.jpg",
     "../assets/images/index-slideshow/main-page-picture.jpg",
     "../assets/images/index-slideshow/midatlantic-meetup.jpeg",
@@ -28,7 +28,7 @@ function PhotoGallery() {
             setIndex(index - 1 < 0 ? slideshow.length - 1 : index - 1)
           }
         />
-        <img className="color-box" src={slideshow[index]} />
+        <img className="color-box" src={slideshow[index]}/>
         <IoIosArrowDropright
           className="arrow"
           onClick={() =>

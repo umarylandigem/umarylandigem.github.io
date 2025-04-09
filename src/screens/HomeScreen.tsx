@@ -16,11 +16,14 @@ export default function HomeScreen() {
   return (
     <body>
       <NavBar />
+      <div style={{height: 50}}/>
+
       <div id="title-holder">
         <div className="title-content">
           <p>UMARYLAND IGEM</p>
         </div>
       </div>
+
       <Slideshow />
 
       <Gears />
@@ -46,6 +49,8 @@ export default function HomeScreen() {
 
 
             </div>
+
+            <div style={{height: 30}}></div>
 
             <PhotoGallery></PhotoGallery>
 
