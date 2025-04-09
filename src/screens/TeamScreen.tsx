@@ -6,6 +6,7 @@ import BoardData from "../data/BoardData.tsx";
 
 import React from "react";
 import NavBar from "../components/NavBar";
+import { CgEnter } from "react-icons/cg";
 
 interface Person {
   name: string;
@@ -37,6 +38,8 @@ function Advisors() {
         style={{
           display: "flex",
           alignItems: "center",
+          marginLeft: 50,
+          marginRight: 50,
           marginBottom: "20px",
         }}
       >
@@ -51,6 +54,9 @@ function Advisors() {
           }}
         />
         <div>
+          <h1 style={{fontFamily: "Rosario-Regular" }}>
+            Dr. Edward Eisenstein
+          </h1>
           <p style={{ fontSize: "1.4rem", fontFamily: "Rosario-Regular" }}>
             Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience
             and Biotechnology Research and an Associate Professor in the
@@ -64,9 +70,12 @@ function Advisors() {
           </p>
         </div>
       </div>
+      
       <div
         style={{
           display: "flex",
+          marginLeft: 50,
+          marginRight: 50,
           alignItems: "center",
           marginBottom: "20px",
           flexDirection: "row-reverse",
@@ -83,7 +92,10 @@ function Advisors() {
           }}
         />
         <div>
-          <p style={{ fontSize: "1.4rem", fontFamily: "Rosario-Regular" }}>
+          <h1 style={{fontFamily: "Rosario-Regular", textAlign: "right" }}>
+          Dr. Jason D. Kahn
+          </h1>
+          <p style={{ fontSize: "1.4rem", fontFamily: "Rosario-Regular", textAlign: "right" }}>
             Dr. Jason D. Kahn is a biophysical chemist who studies
             protein-nucleic acid interaction and engineering. He is best known
             for studies of DNA looping, bending, twisting, and cyclization, as
@@ -105,7 +117,7 @@ export default function TeamScreen() {
     <>
       <Advisors />
 
-      <h2 className="section-title" style={{ fontSize: "3rem" }}>
+      <h2 className="section-title" style={{ fontSize: "4rem" }}>
         Board
       </h2>
 
@@ -115,7 +127,7 @@ export default function TeamScreen() {
         ))}
       </div>
 
-      <h2 className="section-title" style={{ fontSize: "3rem" }}>
+      <h2 className="section-title" style={{ fontSize: "4rem" }}>
         Members
       </h2>
       <div className="grid-container">
