@@ -1,12 +1,11 @@
-import "../styles/team.css"
-import "../styles/nav-bar.css"
+import "../styles/team.css";
+import "../styles/nav-bar.css";
 
 import MembersData from "../data/MembersData.tsx";
 import BoardData from "../data/BoardData.tsx";
 
-import React from "react"
-import NavBar from "../components/NavBar"
-
+import React from "react";
+import NavBar from "../components/NavBar";
 
 interface Person {
   name: string;
@@ -21,11 +20,10 @@ interface BioArgs {
   isBoard: boolean;
 }
 
-
 function Advisors() {
   return (
     <>
-    <NavBar/>
+      <NavBar />
 
     <div style={{ padding: "20px" }}>
       <h2 style={{ textAlign: "center", fontWeight: 400, fontSize: "6rem", fontFamily: "BebasNeue-Regular" }}>
@@ -99,68 +97,76 @@ function Advisors() {
       </div>
     </div>
     </>
-  )
+  );
 }
 
 export default function TeamScreen() {
   return (
     <>
+      <Advisors />
 
-          <Advisors/>
+      <h2 className="section-title" style={{ fontSize: "3rem" }}>
+        Board
+      </h2>
 
-          <h2 className="section-title" style={{ fontSize: "3rem" }}>
-            Board
-          </h2>
+      <div className="grid-container">
+        {BoardData.map((person) => (
+          <Bio person={person} isBoard={true} />
+        ))}
+      </div>
 
-          <div className="grid-container">
-            {BoardData.map((person) => <Bio person={person} isBoard = {true}/>)}
-          </div>
-
-          <h2 className="section-title" style={{ fontSize: "3rem" }}>
-            Members
-          </h2>
-          <div className="grid-container">
-            {MembersData.map((person) => <Bio person={person} isBoard={false}/>)}
-          </div>
+      <h2 className="section-title" style={{ fontSize: "3rem" }}>
+        Members
+      </h2>
+      <div className="grid-container">
+        {MembersData.map((person) => (
+          <Bio person={person} isBoard={false} />
+        ))}
+      </div>
     </>
   );
 }
 
-function Bio({person, isBoard} : BioArgs ) {
+function Bio({ person, isBoard }: BioArgs) {
   return (
     <div className="grid-item-wrapper">
-      <div className={isBoard ? "grid-item board-item" : "grid-item member-item"}>
-        <img
-          src={person.src}
-          alt={person.name}
-          className="square-image"
-        />
+      <div
+        className={isBoard ? "grid-item board-item" : "grid-item member-item"}
+      >
+        <img src={person.src} alt={person.name} className="square-image" />
       </div>
       <p className="name">{person.name}</p>
-      <p className="bioText" title="Year">{person.year}</p>
-      <p className="bioText" title="Major">{person.major}</p>
-      <p className="bioText" title="Committee(s)">{person.committees}</p>
+      <p className="bioText" title="Year">
+        {person.year}
+      </p>
+      <p className="bioText" title="Major">
+        {person.major}
+      </p>
+      <p className="bioText" title="Committee(s)">
+        {person.committees}
+      </p>
     </div>
-  )
+  );
 }
 
 function Graphics() {
-    return (
-        <>
-        <div className="left-corner">
-            <img
-            src="./assets/images/igem-multiple-gears-official.png"
-            alt="Multiple gears"
-            />
-        </div>
+  return (
+    <>
+      <div className="left-corner">
+        <img
+          src="./assets/images/igem-multiple-gears-official.png"
+          alt="Multiple gears"
+        />
+      </div>
 
-        <div className="right-corner">
-            <img
-            src="./assets/images/igem-multiple-gears-official.png"
-            alt="Multiple gears"
-            />
-        </div></>
-    )
+      <div className="right-corner">
+        <img
+          src="./assets/images/igem-multiple-gears-official.png"
+          alt="Multiple gears"
+        />
+      </div>
+    </>
+  );
 }
 
 // Old Advisors
@@ -225,218 +231,228 @@ export default function TeamScreen() {
 }
 */
 function Slideshow() {
-    return (
-        <>
-            <div id="slideshow-modal" className="modal">
-                <div className="modal-content">
-                    <span className="close">&times;</span>
-                    <div className="slideshow">
-                    <span className="prev-arrow">&#10094;</span>
-                    <div className="slideshow-content"></div>
-                    <span className="next-arrow">&#10095;</span>
-                    </div>
-                </div>
-            </div>
-
-    <div className="section" style={{marginTop: "250px"}}>BOARD</div>
-    <br />
-
-    <div id="grid1">
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/exec/renee-jaranson.jpg"
-          className="image"
-        />
+  return (
+    <>
+      <div id="slideshow-modal" className="modal">
+        <div className="modal-content">
+          <span className="close">&times;</span>
+          <div className="slideshow">
+            <span className="prev-arrow">&#10094;</span>
+            <div className="slideshow-content"></div>
+            <span className="next-arrow">&#10095;</span>
+          </div>
+        </div>
       </div>
 
-      <div className="profile">
-        <img src="./assets/images/team-images/exec/Mia-Jocic.JPG" className="image" />
+      <div className="section" style={{ marginTop: "250px" }}>
+        BOARD
       </div>
+      <br />
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/exec/abhi-senthilkumar.JPG"
-          className="image"
-        />
-      </div>
+      <div id="grid1">
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/exec/renee-jaranson.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/exec/jonathan-wu.jpg"
-          className="image"
-        />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/exec/Mia-Jocic.JPG"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/exec/valeria-salas-dietz.jpg"
-          className="image"
-        />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/exec/abhi-senthilkumar.JPG"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/mahita-kamalahasan.jpg"
-          className="image"
-        />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/exec/jonathan-wu.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/navya-bansal.jpg"
-          className="image"
-        />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/exec/valeria-salas-dietz.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Lauren-Applegate.jpg"
-          className="image"
-        />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/mahita-kamalahasan.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Gadigi-Aditri.jpg"
-          className="image"
-        />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/navya-bansal.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/jonathon-meyer.jpg"
-          className="image"
-        />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Lauren-Applegate.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="empty profile"></div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Gadigi-Aditri.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/IMG_3901.jpg"
-          className="image"
-        />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/jonathon-meyer.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Sami_Kudagunti_Headshot.jpg"
-          className="image"
-        />
-      </div>
+        <div className="empty profile"></div>
 
-      <div className="profile">
-        <img src="" alt="" />
-      </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/IMG_3901.jpg"
+            className="image"
+          />
+        </div>
 
-      <div className="empty profile"></div>
-    </div>
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Sami_Kudagunti_Headshot.jpg"
+            className="image"
+          />
+        </div>
 
-    <br /><br />
-    <div className="section">MEMBERS</div>
-    <br />
+        <div className="profile">
+          <img src="" alt="" />
+        </div>
 
-    <div id="grid2">
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Krista-Adu-Osei.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/brennen.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/patrick.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Vikram Khandelwal Headshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Viharika.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img src="./assets/images/team-images/members/Ananya.jpg" className="image" />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Patricia Rosemond Headshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Dana_Harel_Headshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Haider Hussain headshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Rebecca Lu Headshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Kevin Zhang headshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/Graham Ferguson Headshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img src="./assets/images/team-images/members/sarahz.jpg" className="image" />
-      </div>
-
-      <div className="profile">
-        <img
-          src="./assets/images/team-images/members/keithheadshot.jpg"
-          className="image"
-        />
-      </div>
-
-      <div className="profile">
-        <img src="" alt="" />
+        <div className="empty profile"></div>
       </div>
 
       <br />
-    </div>
-        </>
-    )
+      <br />
+      <div className="section">MEMBERS</div>
+      <br />
+
+      <div id="grid2">
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Krista-Adu-Osei.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/brennen.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/patrick.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Vikram Khandelwal Headshot.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Viharika.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Ananya.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Patricia Rosemond Headshot.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Dana_Harel_Headshot.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Haider Hussain headshot.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Rebecca Lu Headshot.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Kevin Zhang headshot.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/Graham Ferguson Headshot.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/sarahz.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            src="./assets/images/team-images/members/keithheadshot.jpg"
+            className="image"
+          />
+        </div>
+
+        <div className="profile">
+          <img src="" alt="" />
+        </div>
+
+        <br />
+      </div>
+    </>
+  );
 }
-
-

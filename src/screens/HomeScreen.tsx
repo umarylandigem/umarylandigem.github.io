@@ -1,39 +1,42 @@
-import "../styles/home.css"
-import "../styles/nav-bar.css"
+import "../styles/home.css";
+import "../styles/nav-bar.css";
+import "../styles/footer.css";
 
-import React from "react"
-import { useState, useEffect } from "react"
-import NavBar from "../components/NavBar"
-import Slideshow from "../components/Slideshow"
-import Gears from "../components/Gears"
+import React from "react";
+import { useState, useEffect } from "react";
+import NavBar from "../components/NavBar";
+import Slideshow from "../components/Slideshow";
+import Gears from "../components/Gears";
+import PhotoGallery from "../components/PhotoGallery";
+import Footer from "../components/Footer";
 
-export default function HomeScreen () {
-    setTimeout(Slideshow, 3000);
+export default function HomeScreen() {
+  setTimeout(Slideshow, 3000);
 
-    return (
-        <body>
-            <NavBar/>
-            <div id="title-holder">
-                <div className="title-content">
-                    <p>UMARYLAND IGEM</p>
-                </div>
-            </div>    
-            <Slideshow/>
-            
-            <Gears/>
+  return (
+    <body>
+      <NavBar />
+      <div id="title-holder">
+        <div className="title-content">
+          <p>UMARYLAND IGEM</p>
+        </div>
+      </div>
+      <Slideshow />
 
-            <div className="text-block">
-                <h1>What is iGEM?</h1>
-                <p>
-                    iGEM (international Genetically Engineered Machine) is a competition
-                    that challenges students from universities all around the world to solve
-                    local and global problems with synthetic biology. At the end of each
-                    year, iGEM teams travel to Paris to defend the scientific merit and
-                    community impact of their projects.
-                </p>
+      <Gears />
 
-                <br />
-            </div>
+      <div className="text-block">
+        <h1>What is iGEM?</h1>
+        <p>
+          iGEM (international Genetically Engineered Machine) is a competition
+          that challenges students from universities all around the world to
+          solve local and global problems with synthetic biology. At the end of
+          each year, iGEM teams travel to Paris to defend the scientific merit
+          and community impact of their projects.
+        </p>
+
+        <br />
+      </div>
 
             <div className="text-block">
                 <h1>UMaryland iGEM</h1>
@@ -43,8 +46,10 @@ export default function HomeScreen () {
 
 
             </div>
+
+            <PhotoGallery></PhotoGallery>
+
+            <Footer/>
         </body>
     )
 }
-
-
