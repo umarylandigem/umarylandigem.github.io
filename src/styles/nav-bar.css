@@ -1,13 +1,14 @@
 @font-face {
   font-family: "Questrial-Regular";
   src: local("Questrial-Regular"),
-    url(./assets/fonts/Questrial-Regular) format("truetype");
+    url(../../assets/fonts/Questrial-Regular) format("truetype");
 }
 
 @font-face {
   font-family: "PlusJakartaSans-VariableFont_wght";
   src: local("PlusJakartaSans-VariableFont_wght"),
-    url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format("truetype");
+    url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf)
+      format("truetype");
 }
 
 body {

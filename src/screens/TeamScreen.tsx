@@ -27,8 +27,7 @@ function Advisors() {
       <NavBar />
 
     <div style={{ padding: "20px" }}>
-      <h2 style={{ textAlign: "center", fontWeight: 400, fontSize: "6rem", fontFamily: "BebasNeue-Regular" }}>
-        OUR TEAM
+      <h2 style={{ textAlign: "center", fontWeight: 400, fontSize: "6rem", fontFamily: "BebasNeue-Regular" }}>OUR TEAM
       </h2>
     
       <h2 style={{ textAlign: "center", fontSize: "3rem", fontWeight: 400, fontFamily: "BebasNeue-Regular" }}>
@@ -181,67 +180,6 @@ function Graphics() {
   );
 }
 
-// Old Advisors
-/*
-function Advisors() {
-    return (
-        <>
-        <br /><br />
-
-        <div className="advisor-block" style={{marginLeft: "15%"}}>
-        <div className="circle" style={{float: "left"}}>
-            <img src="./assets/images/team-images/advisors/dr-einstein.jpg" />
-        </div>
-        <div className="advisor-text" style={{float: "left"}}>
-            Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience and
-            Biotechnology Research and an Associate Professor in the Fischell
-            Department of Bioengineering at the University of Maryland. Trained in
-            synthetic biology and protein engineering, his current research
-            interests are focused on protein and biosystem engineering for
-            applications in plants such as biofuels and pathogen resistance. He has
-            advised the Umaryland iGEM team since 2014 and is an active leader of
-            the iGEM Engineering and Steering Committees.
-        </div>
-        </div>
-
-        <br /><br />
-        <div className="advisor-block" style={{float: "right",  marginRight: "15%"}}>
-        <div className="circle" style={{float: "right"}}>
-            <img src="./assets/images/team-images/advisors/dr-kahn.jpg" />
-        </div>
-        <div className="advisor-text" style={{float: "right"}}>
-            Dr. Jason D. Kahn is a biophysical chemist who studies protein-nucleic
-            acid interaction and engineering. He is best known for studies of DNA
-            looping, bending, twisting, and cyclization, as well as hybridization
-            thermodynamics for modified bases. He teaches a variety of chemistry,
-            biochemistry, and molecular biology courses, which he credits for
-            initiating his interest in synthetic biology. With Dr. Eisenstein, he
-            has mentored UMaryland iGEM since 2014.
-        </div>
-        </div>
-        </>
-    )
-}
-*/
-//Old TeamScreen
-/*
-export default function TeamScreen() {
-    return (
-        <body>
-            <NavBar/>
-            <Graphics/>
-            {/**Advisor images are 205x205px *}
-            <div id="title">OUR TEAM</div>
-
-
-            <div className="section">ADVISORS</div>
-            <Advisors/>
-
-            <Slideshow/>
-        </body>
-    )
-}
-*/
 function Slideshow() {
   return (
     <>
