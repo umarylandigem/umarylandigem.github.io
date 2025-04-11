@@ -23,22 +23,16 @@ interface BioArgs {
 
 function Advisors() {
   return (
-    <>
-      <NavBar />
-
-    <div style={{ padding: "20px" }}>
-      <h2 style={{ textAlign: "center", fontWeight: 400, fontSize: "6rem", fontFamily: "BebasNeue-Regular" }}>OUR TEAM
-      </h2>
-    
-      <h2 style={{ textAlign: "center", fontSize: "3rem", fontWeight: 400, fontFamily: "BebasNeue-Regular" }}>
+    <div style={{ marginLeft: 100, marginRight: 100 }}>
+      <h2 className="section-title" style={{ fontSize: "4rem", marginTop: 20 }}>
         Advisors
       </h2>
+
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          marginLeft: 50,
-          marginRight: 50,
+          justifyContent: "center",
           marginBottom: "20px",
         }}
       >
@@ -73,9 +67,8 @@ function Advisors() {
       <div
         style={{
           display: "flex",
-          marginLeft: 50,
-          marginRight: 50,
           alignItems: "center",
+          justifyContent: "center",
           marginBottom: "20px",
           flexDirection: "row-reverse",
         }}
@@ -107,13 +100,16 @@ function Advisors() {
         </div>
       </div>
     </div>
-    </>
   );
 }
 
 export default function TeamScreen() {
   return (
     <>
+      <NavBar />
+      <h2 className="section-title" style={{ fontSize: "6rem"}}>
+        OUR 2025 TEAM
+      </h2>
       <Advisors />
 
       <h2 className="section-title" style={{ fontSize: "4rem" }}>
