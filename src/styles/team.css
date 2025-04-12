@@ -21,21 +21,18 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  margin-bottom: 20px;
-
-  /*
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;*/
+  flex-wrap: wrap;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+  gap: 3rem;
 }
 
 .grid-item {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
@@ -93,8 +90,7 @@ body {
 }
 
 .name {
-  font-family: "BebasNeue-Regular";
-  font-weight: 200;
+  font-weight: 400;
   margin-top: 10px;
   font-size: 1.2em;
 }
@@ -102,11 +98,7 @@ body {
 .bio {
   text-align: center;
   font-size: 0.9em;
-  color: #666;
-  font-family: "Rosario-Regular";
-}
-
-.bioText {
+  color: white;
   font-family: "Rosario-Regular";
 }
 
@@ -121,6 +113,8 @@ body {
 .bioText {
   margin: 0;
   font-size: 15;
+  font-family: "Rosario-Regular";
+  width: 150px;
   text-align: "center";
 }
 

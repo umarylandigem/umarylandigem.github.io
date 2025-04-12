@@ -1,8 +1,8 @@
 import "../styles/team.css";
 import "../styles/nav-bar.css";
 
-import MembersData from "../data/MembersData.tsx";
-import BoardData from "../data/BoardData.tsx";
+import MembersData from "../data/MembersData2025.tsx";
+import BoardData from "../data/BoardData2025.tsx";
 
 import React from "react";
 import NavBar from "../components/NavBar";
@@ -137,21 +137,22 @@ export default function TeamScreen() {
 function Bio({ person, isBoard }: BioArgs) {
   return (
     <div className="grid-item-wrapper">
-      <div
-        className={isBoard ? "grid-item board-item" : "grid-item member-item"}
-      >
+      <div className={isBoard ? "grid-item board-item" : "grid-item member-item"}>
         <img src={person.src} alt={person.name} className="square-image" />
       </div>
-      <p className="name">{person.name}</p>
-      <p className="bioText" title="Year">
-        {person.year}
-      </p>
-      <p className="bioText" title="Major">
-        {person.major}
-      </p>
-      <p className="bioText" title="Committee(s)">
-        {person.committees}
-      </p>
+      <div className = "bio">
+        <p className="name">{person.name}</p>
+        <p className="bioText" title="Year">
+          {person.year}
+        </p>
+        <p className="bioText" title="Major">
+          {person.major}
+        </p>
+        <p className="bioText" title="Committee(s)">
+          {person.committees}
+        </p>
+      </div>
+
     </div>
   );
 }
