@@ -1,8 +1,8 @@
 import "../styles/team.css";
 import "../styles/nav-bar.css";
 
-import MembersData from "../data/MembersData.tsx";
-import BoardData from "../data/BoardData.tsx";
+import MembersData from "../data/MembersData2025.tsx";
+import BoardData from "../data/BoardData2025.tsx";
 
 import React from "react";
 import NavBar from "../components/NavBar";
@@ -23,23 +23,16 @@ interface BioArgs {
 
 function Advisors() {
   return (
-    <>
-      <NavBar />
-
-    <div style={{ padding: "20px" }}>
-      <h2 style={{ textAlign: "center", fontWeight: 400, fontSize: "6rem", fontFamily: "BebasNeue-Regular" }}>
-        OUR TEAM
-      </h2>
-    
-      <h2 style={{ textAlign: "center", fontSize: "3rem", fontWeight: 400, fontFamily: "BebasNeue-Regular" }}>
+    <div style={{ marginLeft: 100, marginRight: 100 }}>
+      <h2 className="section-title" style={{ fontSize: "4rem", marginTop: 20 }}>
         Advisors
       </h2>
+
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          marginLeft: 50,
-          marginRight: 50,
+          justifyContent: "center",
           marginBottom: "20px",
         }}
       >
@@ -74,9 +67,8 @@ function Advisors() {
       <div
         style={{
           display: "flex",
-          marginLeft: 50,
-          marginRight: 50,
           alignItems: "center",
+          justifyContent: "center",
           marginBottom: "20px",
           flexDirection: "row-reverse",
         }}
@@ -108,13 +100,16 @@ function Advisors() {
         </div>
       </div>
     </div>
-    </>
   );
 }
 
 export default function TeamScreen() {
   return (
     <>
+      <NavBar />
+      <h2 className="section-title" style={{ fontSize: "6rem"}}>
+        OUR 2025 TEAM
+      </h2>
       <Advisors />
 
       <h2 className="section-title" style={{ fontSize: "4rem" }}>
@@ -142,21 +137,22 @@ export default function TeamScreen() {
 function Bio({ person, isBoard }: BioArgs) {
   return (
     <div className="grid-item-wrapper">
-      <div
-        className={isBoard ? "grid-item board-item" : "grid-item member-item"}
-      >
+      <div className={isBoard ? "grid-item board-item" : "grid-item member-item"}>
         <img src={person.src} alt={person.name} className="square-image" />
       </div>
-      <p className="name">{person.name}</p>
-      <p className="bioText" title="Year">
-        {person.year}
-      </p>
-      <p className="bioText" title="Major">
-        {person.major}
-      </p>
-      <p className="bioText" title="Committee(s)">
-        {person.committees}
-      </p>
+      <div className = "bio">
+        <p className="name">{person.name}</p>
+        <p className="bioText" title="Year">
+          {person.year}
+        </p>
+        <p className="bioText" title="Major">
+          {person.major}
+        </p>
+        <p className="bioText" title="Committee(s)">
+          {person.committees}
+        </p>
+      </div>
+
     </div>
   );
 }
@@ -181,67 +177,6 @@ function Graphics() {
   );
 }
 
-// Old Advisors
-/*
-function Advisors() {
-    return (
-        <>
-        <br /><br />
-
-        <div className="advisor-block" style={{marginLeft: "15%"}}>
-        <div className="circle" style={{float: "left"}}>
-            <img src="./assets/images/team-images/advisors/dr-einstein.jpg" />
-        </div>
-        <div className="advisor-text" style={{float: "left"}}>
-            Dr. Edward Eisenstein is a Fellow in the Institute for Bioscience and
-            Biotechnology Research and an Associate Professor in the Fischell
-            Department of Bioengineering at the University of Maryland. Trained in
-            synthetic biology and protein engineering, his current research
-            interests are focused on protein and biosystem engineering for
-            applications in plants such as biofuels and pathogen resistance. He has
-            advised the Umaryland iGEM team since 2014 and is an active leader of
-            the iGEM Engineering and Steering Committees.
-        </div>
-        </div>
-
-        <br /><br />
-        <div className="advisor-block" style={{float: "right",  marginRight: "15%"}}>
-        <div className="circle" style={{float: "right"}}>
-            <img src="./assets/images/team-images/advisors/dr-kahn.jpg" />
-        </div>
-        <div className="advisor-text" style={{float: "right"}}>
-            Dr. Jason D. Kahn is a biophysical chemist who studies protein-nucleic
-            acid interaction and engineering. He is best known for studies of DNA
-            looping, bending, twisting, and cyclization, as well as hybridization
-            thermodynamics for modified bases. He teaches a variety of chemistry,
-            biochemistry, and molecular biology courses, which he credits for
-            initiating his interest in synthetic biology. With Dr. Eisenstein, he
-            has mentored UMaryland iGEM since 2014.
-        </div>
-        </div>
-        </>
-    )
-}
-*/
-//Old TeamScreen
-/*
-export default function TeamScreen() {
-    return (
-        <body>
-            <NavBar/>
-            <Graphics/>
-            {/**Advisor images are 205x205px *}
-            <div id="title">OUR TEAM</div>
-
-
-            <div className="section">ADVISORS</div>
-            <Advisors/>
-
-            <Slideshow/>
-        </body>
-    )
-}
-*/
 function Slideshow() {
   return (
     <>

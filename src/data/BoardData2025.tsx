@@ -27,14 +27,6 @@ const BoardData = [
     committees: "Wet Lab and Modeling",
     src: "https://static.igem.wiki/teams/5104/team/graham-ferguson-headshot-updated.png",
   },
-  /*
-  {
-    name: "Jonathon Meyer",
-    year: "Sophomore",
-    major: "Biology",
-    committees: "Human Practices and Modeling",
-    src: "https://static.igem.wiki/teams/5104/team/jonathon-meyer-headshot-updated.png",
-  },*/
   {
     name: "Jonathan Wu",
     year: "Sophomore",
@@ -56,15 +48,6 @@ const BoardData = [
     committees: "Design",
     src: "https://static.igem.wiki/teams/5104/team/mahita-kamalahasan-headshot-updated.png",
   },
-  /*
-  {
-    name: "Mia Jocic",
-    year: "Junior",
-    major: "Bioengineering",
-    committees: "Wet Lab and Human Practices",
-    src: "https://static.igem.wiki/teams/5104/team/mia-jocicheadshot-updated.png",
-  },
-  */
   {
     name: "Navya Bansal",
     year: "Sophomore",
@@ -73,36 +56,19 @@ const BoardData = [
     src: "https://static.igem.wiki/teams/5104/team/navya-bansal-headshot-updated.png",
   },
   {
+    name: "Rebecca Lu",
+    year: "Junior",
+    major: "Bioengineering",
+    committees: "Wet Lab",
+    src: "../../assets/images/headshots-square/rebecca-lu-3-bioengineering-wetlab.jpg",
+  },
+  {
     name: "Renee Jaranson",
     year: "Junior",
     major: "Bioengineering",
     committees: "Design and Modeling",
     src: "https://static.igem.wiki/teams/5104/team/renee-jaranson-headshot-updated.png",
   },
-  /*
-  {
-    name: "Sami Kudagunti",
-    year: "Sophomore",
-    major: "Bioengineering",
-    committees: "Wet Lab ",
-    src: "https://static.igem.wiki/teams/5104/team/sami-kudagunti-headshot-updated.png",
-  },
-
-  {
-    name: "Sarah Firdaus",
-    year: "Senior",
-    major: "Bioengineering and Creativing Writing Minor",
-    committees: "Wet Lab and Human Practices",
-    src: "https://static.igem.wiki/teams/5104/team/sarahfirdaus-updated.png",
-  },
-  {
-    name: "Valeria Salas-Dietz",
-    year: "Senior",
-    major: "Finance",
-    committees: "Finance",
-    src: "https://static.igem.wiki/teams/5104/team/valeria-salas-dietz-headshot-updated.png",
-  },
-    */
 ];
 
 export default BoardData;

@@ -1,13 +1,13 @@
 @font-face {
   font-family: "BebasNeue-Regular";
   src: local("BebasNeue-Regular"),
-    url(./assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+    url(../../assets/fonts/BebasNeue-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Rosario-Regular";
   src: local("Rosario-Regular"),
-    url(./assets/fonts/Rosario-Regular.ttf) format("truetype");
+    url(../../assets/fonts/Rosario-Regular.ttf) format("truetype");
 }
 
 body {
