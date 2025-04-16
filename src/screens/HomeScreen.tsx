@@ -1,6 +1,4 @@
-import "../styles/home.css";
-import "../styles/nav-bar.css";
-import "../styles/footer.css";
+
 
 import React from "react";
 import { useState, useEffect } from "react";
@@ -9,6 +7,10 @@ import Slideshow from "../components/Slideshow";
 import Gears from "../components/Gears";
 import PhotoGallery from "../components/PhotoGallery";
 import Footer from "../components/Footer";
+
+import "../styles/home.css";
+import "../styles/nav-bar.css";
+import "../styles/footer.css";
 
 export default function HomeScreen() {
   setTimeout(Slideshow, 3000);

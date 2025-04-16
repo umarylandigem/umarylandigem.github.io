@@ -21,19 +21,30 @@ const MembersData = [
     src: "https://static.igem.wiki/teams/5104/team/patrick-hong-headshot-updated.png",
   },
   {
-    name: "Viharika Penmetsa",
-    year: "Sophomore",
-    major: "Computer Science",
-    committees: "Design",
-    src: "https://static.igem.wiki/teams/5104/team/viharika-penmetsa-headshot-updated.png",
-  },
-  {
     name: "Rushi",
     year: "Unknown",
     major: "Computer Science",
     committees: "Design",
     src: "../../assets/images/headshots-square/Rushi_Headshot.png",
   },
+  {
+    name: "Soma Hebbar",
+    year: "Freshmen",
+    major: "Bioengineering",
+    committees: "Design",
+    src: "../../assets/images/headshots-square/SomaHebbar-Headshot-BIOE.jpg",
+  },
+  {
+    name: "Valerie Hoeycutt",
+    year: "Junior",
+    major: "Bioengineering",
+    committees: "Design",
+    src: "../../assets/images/headshots-square/valerie-hoeycutt-3-bioengineer.jpg",
+  },
+  
+
+
+
   {
     name: "Amrutha Alibili",
     year: "Sophomore",
@@ -68,13 +79,6 @@ const MembersData = [
     major: "Biology",
     committees: "Wet Lab and Human Practices",
     src: "https://static.igem.wiki/teams/5104/team/krista-adu-osei-headshot-updated.png",
-  },
-  {
-    name: "Patricia Rosemond",
-    year: "Junior ",
-    major: "Biology",
-    committees: "Design",
-    src: "https://static.igem.wiki/teams/5104/team/patricia-rosemond-headshot-updated.png",
   },
   {
     name: "Vikram Khandelwal",
@@ -202,20 +206,7 @@ const MembersData = [
     committees: "Wet Lab",
     src: "../../assets/images/headshots-square/Sailaja-Kadali-1-Neuroscience-wetlab .jpg",
   },
-  {
-    name: "Soma Hebbar",
-    year: "Freshmen",
-    major: "Bioengineering",
-    committees: "Design",
-    src: "../../assets/images/headshots-square/SomaHebbar-Headshot-BIOE.jpg",
-  },
-  {
-    name: "Valerie Hoeycutt",
-    year: "Junior",
-    major: "Bioengineering",
-    committees: "Unknown",
-    src: "../../assets/images/headshots-square/valerie-hoeycutt-3-bioengineer.jpg",
-  },
+
 ];
 
 export default MembersData;

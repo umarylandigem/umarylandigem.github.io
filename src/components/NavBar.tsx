@@ -14,9 +14,10 @@ function NavBar() {
             </div>
 
             <div className="links">
-                <Link to="/">ABOUT US</Link>
+                <Link to="/">ABOUT</Link>
                 <Link to="/projects">PROJECTS</Link>
                 <Link to="/team">TEAM</Link>
+                <Link to="/join">JOIN</Link>
                 <Link to="/contact">CONTACT</Link>
             </div>
         </nav>

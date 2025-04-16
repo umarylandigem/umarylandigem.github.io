@@ -7,6 +7,7 @@ import HomeScreen from "./screens/HomeScreen.tsx";
 import ContactScreen from "./screens/ContactScreen.tsx";
 import ProjectsScreen from "./screens/ProjectsScreen.tsx";
 import TeamScreen from "./screens/TeamScreen.tsx";
+import JoinUs from "./screens/JoinUs.tsx";
 
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/contact" element={<ContactScreen/>} />
         <Route path="/projects" element={<ProjectsScreen/>} />
         <Route path="/team" element={<TeamScreen/>} />
+        <Route path="/join" element = {<JoinUs/>}/>
         <Route path="/*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
