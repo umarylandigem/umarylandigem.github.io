@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "PlusJakartaSans-VariableFont_wght";
+  src: local("PlusJakartaSans-VariableFont_wght"),
+    url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf)
+      format("truetype");
+}
+
+.top-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-section-title {
+  color: #ffbf47;
+  font-family: "PlusJakartaSans-VariableFont_wght";
+  font-size: 70px;
+  text-align: center;
+}
+
+.top-section-description {
+  margin-top: 10px;
+  font-family: "PlusJakartaSans-VariableFont_wght";
+  font-size: 30px;
+  text-align: center;
+  width: 80%;
+}
+
+.join-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar {
+  border: 0;
+  width: 90%;
+  height: 800px;
+}
+
+.calendar-title {
+  margin-top: 10px;
+  font-family: "PlusJakartaSans-VariableFont_wght";
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+  color: #349e56;
+}
